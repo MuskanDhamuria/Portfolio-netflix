@@ -13,9 +13,19 @@ interface ContentRowProps {
   title: string;
   items: ContentItem[];
   onItemClick: (item: ContentItem) => void;
+  cardWidthClassName?: string;
+  cardAspectClassName?: string;
+  centered?: boolean;
 }
 
-export function ContentRow({ title, items, onItemClick }: ContentRowProps) {
+export function ContentRow({
+  title,
+  items,
+  onItemClick,
+  cardWidthClassName = "min-w-[200px] md:min-w-[280px]",
+  cardAspectClassName = "aspect-[2/3]",
+  centered = false,
+}: ContentRowProps) {
   const rowRef = useRef<HTMLDivElement>(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(true);
@@ -46,7 +56,7 @@ export function ContentRow({ title, items, onItemClick }: ContentRowProps) {
 
       <div className="relative">
         {/* Left Arrow */}
-        {showLeftArrow && (
+        {!centered && showLeftArrow && (
           <button
             onClick={() => scroll("left")}
             className="absolute left-0 top-0 bottom-0 z-10 w-12 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-black/80"
@@ -59,7 +69,11 @@ export function ContentRow({ title, items, onItemClick }: ContentRowProps) {
         <div
           ref={rowRef}
           onScroll={handleScroll}
-          className="flex gap-2 overflow-x-scroll scrollbar-hide px-8 md:px-16 lg:px-20 scroll-smooth"
+          className={
+            centered
+              ? "flex flex-wrap justify-center gap-2 px-8 md:px-16 lg:px-20"
+              : "flex gap-2 overflow-x-scroll scrollbar-hide px-8 md:px-16 lg:px-20 scroll-smooth"
+          }
         >
           {items.map((item, index) => (
             <motion.div
@@ -68,10 +82,10 @@ export function ContentRow({ title, items, onItemClick }: ContentRowProps) {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="min-w-[200px] md:min-w-[280px] cursor-pointer transition-transform relative"
+              className={`${cardWidthClassName} cursor-pointer transition-transform relative`}
               onClick={() => onItemClick(item)}
             >
-              <div className="relative aspect-[2/3] rounded overflow-hidden group/card">
+              <div className={`relative ${cardAspectClassName} rounded overflow-hidden group/card`}>
                 <img
                   src={item.thumbnail || "https://via.placeholder.com/400x600?text=No+Image"}
                   alt={item.title || "Content item"}
@@ -91,7 +105,7 @@ export function ContentRow({ title, items, onItemClick }: ContentRowProps) {
         </div>
 
         {/* Right Arrow */}
-        {showRightArrow && (
+        {!centered && showRightArrow && (
           <button
             onClick={() => scroll("right")}
             className="absolute right-0 top-0 bottom-0 z-10 w-12 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center hover:bg-black/80"

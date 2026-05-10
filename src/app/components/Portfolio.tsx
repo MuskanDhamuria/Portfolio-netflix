@@ -6,10 +6,14 @@ import { SkillsSection } from "./SkillsSection";
 import { EducationTimeline } from "./EducationTimeline";
 import { ProjectModal } from "./ProjectModal";
 import { Footer } from "./Footer";
+import { AwardsSection } from "./AwardsSection";
+import { CertificatesSection } from "./CertificatesSection";
 import data from "../../data.json";
 
 export function Portfolio() {
   const [selectedItem, setSelectedItem] = useState<any>(null);
+  const standardCardWidth = "w-[200px] md:w-[280px] flex-none";
+  const standardCardAspect = "aspect-[2/3]";
 
   // Safety check for data
   if (!data || !data.hero) {
@@ -40,6 +44,8 @@ export function Portfolio() {
             title="Featured Projects"
             items={data.featuredProjects}
             onItemClick={setSelectedItem}
+            cardWidthClassName={standardCardWidth}
+            cardAspectClassName={standardCardAspect}
           />
         )}
 
@@ -48,6 +54,8 @@ export function Portfolio() {
             title="Work Experience"
             items={data.workExperience}
             onItemClick={setSelectedItem}
+            cardWidthClassName={standardCardWidth}
+            cardAspectClassName={standardCardAspect}
           />
         )}
 
@@ -63,17 +71,10 @@ export function Portfolio() {
           />
         )}
 
-        {data.awards && (
-          <ContentRow
-            title="Awards"
-            items={data.awards}
-            onItemClick={setSelectedItem}
-          />
-        )}
+        {data.awards && <AwardsSection items={data.awards} />}
 
         {data.certificates && (
-          <ContentRow
-            title="Certificates"
+          <CertificatesSection
             items={data.certificates}
             onItemClick={setSelectedItem}
           />
@@ -84,6 +85,9 @@ export function Portfolio() {
             title="Connect with Me"
             items={data.connect}
             onItemClick={setSelectedItem}
+            cardWidthClassName="w-[170px] md:w-[220px] flex-none"
+            cardAspectClassName="aspect-square"
+            centered
           />
         )}
       </div>

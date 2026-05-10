@@ -12,8 +12,7 @@ interface WhoIsWatchingProps {
 
 export function WhoIsWatching({ onSelectProfile }: WhoIsWatchingProps) {
   const profiles: Profile[] = [
-    { id: "1", name: "Myself", color: "#00CED1" },
-    { id: "2", name: "My BFF", color: "#e50973" },
+    { id: "1", name: "You", color: "#00CED1" }
   ];
 
   return (

@@ -52,7 +52,7 @@
         "role": "Data Analyst",
         "highlights": [
           "Achieved Higher Distinction for the project",
-          "Analyzed 100,000+ HDB resale transactions from 2015-2024",
+          "Analyzed 100,000+ HDB resale transactions from 2015-2024"
         ]
       }
     },
@@ -68,7 +68,7 @@
         "role": "Data Analyst",
         "highlights": [
           "Achieved Higher Distinction for the project",
-          "Analyzed 100,000+ HDB resale transactions from 2015-2024",
+          "Analyzed 100,000+ HDB resale transactions from 2015-2024"
         ]
       },
       "githubUrl": "https://github.com/MuskanDhamuria/URBANIX",
@@ -94,7 +94,7 @@
         {
       "id": "6",
       "title": "SNAPEE!",
-      "description": "My team and I applied a full iterative, human-centred design process across multipledevelopment cycles. We conducted user research and empathy analysis to understand the challenges faced by busy students, translated insights into clear functional and usability requirements, and developed a low-fidelity prototype of the app’s UI. We then performed a heuristic evaluation to assess usability, identify design flaws, and refine navigation, layout, and feature clarity. IWe also enhanced the prototype into a more refined design, incorporating structured feedback and usability testing through planned A/B experiments. We analysed results using the Mann–Whitney U Test to improve user flow, accessibility, and overall interaction design, while documenting design decisions and progress throughout.",
+      "description": "My team and I applied a full iterative, human-centred design process across multipledevelopment cycles. We conducted user research and empathy analysis to understand the challenges faced by busy students, translated insights into clear functional and usability requirements, and developed a low-fidelity prototype of the app's UI. We then performed a heuristic evaluation to assess usability, identify design flaws, and refine navigation, layout, and feature clarity. We also enhanced the prototype into a more refined design, incorporating structured feedback and usability testing through planned A/B experiments. We analysed results using the Mann-Whitney U Test to improve user flow, accessibility, and overall interaction design, while documenting design decisions and progress throughout.",
       "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
       "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
       "details": {
@@ -530,14 +530,6 @@
       "thumbnail": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400&h=600&fit=crop",
       "url": "mailto:muskan.dhamuria@example.com",
       "icon": "Mail"
-    },
-    {
-      "id": "c4",
-      "title": "Instagram",
-      "description": "Follow my journey and creative projects",
-      "thumbnail": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=600&fit=crop",
-      "url": "https://instagram.com/muskandhamuria",
-      "icon": "Instagram"
     }
   ]
 }
