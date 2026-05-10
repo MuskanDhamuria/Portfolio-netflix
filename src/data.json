@@ -1,0 +1,543 @@
+{
+  "hero": {
+    "name": "MUSKAN DHAMURIA",
+    "tagline": "Information Systems Student | Product Development & Cybersecurity",
+    "description": "Building innovative solutions at the intersection of technology and user experience. Passionate about full stack development, data analytics, and cybersecurity.  ",
+    "videoUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4"
+  },
+  "featuredProjects": [
+    {
+      "id": "1",
+      "title": "Questpass",
+      "description": "QuestPass is a fair-access presale platform designed to combat ticket scalping and bot abuse. Instead of selling tickets, QuestPass integrates with official ticketing partners and allows fans to earn presale access by completing engagement-based quests such as music trivia, listening history verification, and mini-games.",
+      "thumbnail": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "tech": ["Vue.js", "Vue Router", "Pinia", "Bootstrap 5", "Firebase", "Node.js", "Spotify API", "Gemini API", "Jambase API", "Google Maps API", "EmailJS", "Deezer API"],
+        "duration": "4 months",
+        "role": "Full Stack Developer",
+        "highlights": [
+          "Achieved Higher Distinction for the project",
+          "Built loyalty system for artists and genuine fans"
+        ]
+      },
+      "liveUrl": "https://questpass-b3680.web.app/",
+      "githubUrl": "https://github.com/MuskanDhamuria/QuestPass"
+    },
+    {
+      "id": "2",
+      "title": "Urbanix",
+      "description": "Implemented multi-objective optimization logic and Pareto frontier analysis to simulate and evaluate urban policy bundles. Developed data ingestion and transformation pipeline for Excel-based urban datasets and real-time visualization dashboards.",
+      "thumbnail": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "tech": ["React.js", "TypeScript", "Tailwind CSS", "Recharts", "SheetJS", "Node.js", "Ollama", "JavaScript"],
+        "duration": "Hackathon",
+        "role": "System Architect & Developer",
+        "highlights": [
+          "Most Feasible Solution at Hack For Cities Hackathon 2026"
+        ]
+      },
+      "githubUrl": "https://github.com/MuskanDhamuria/URBANIX"
+    },
+    {
+      "id": "3",
+      "title": "Housing Price Analysis Singapore",
+      "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "tech": ["Tableau", "Power Query", "Excel", "Pandas", "Folium", "Matplotlib"],
+        "duration": "4 months",
+        "role": "Data Analyst",
+        "highlights": [
+          "Achieved Higher Distinction for the project",
+          "Analyzed 100,000+ HDB resale transactions from 2015-2024",
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "title": "Digital transformation of a local business",
+      "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "tech": ["Tableau", "Power Query", "Excel", "Pandas", "Folium", "Matplotlib"],
+        "duration": "4 months",
+        "role": "Data Analyst",
+        "highlights": [
+          "Achieved Higher Distinction for the project",
+          "Analyzed 100,000+ HDB resale transactions from 2015-2024",
+        ]
+      },
+      "githubUrl": "https://github.com/MuskanDhamuria/URBANIX",
+      "liveUrl": "https://questpass-b3680.web.app/"
+    },
+
+    {
+      "id": "5",
+      "title": "PixelPop",
+      "description": "A responsive web-based Game Platform that showcases mini-games I have built.",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "tech": ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase", "Gemini API"],
+        "duration": "4 months",
+        "role": "Full Stack Developer",
+        "highlights": [
+          "Solo project"        ]
+      },
+      "liveUrl": "https://muskandhamuria.github.io/PixelPop/",
+      "githubUrl": "https://github.com/MuskanDhamuria/PixelPop"
+    },
+        {
+      "id": "6",
+      "title": "SNAPEE!",
+      "description": "My team and I applied a full iterative, human-centred design process across multipledevelopment cycles. We conducted user research and empathy analysis to understand the challenges faced by busy students, translated insights into clear functional and usability requirements, and developed a low-fidelity prototype of the app’s UI. We then performed a heuristic evaluation to assess usability, identify design flaws, and refine navigation, layout, and feature clarity. IWe also enhanced the prototype into a more refined design, incorporating structured feedback and usability testing through planned A/B experiments. We analysed results using the Mann–Whitney U Test to improve user flow, accessibility, and overall interaction design, while documenting design decisions and progress throughout.",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "tech": ["Figma", "Maze"],
+        "duration": "4 months",
+        "role": "UI//UX Design Lead",
+        "highlights": [
+          "Achieved Distinction for the project"        ]
+      },
+      "liveUrl": "https://www.figma.com/proto/BKTOmef4hu7pEJpI0aYzRP/SNAPEE-?node-id=1367-19019&p=f&t=3U69V3hZRDAZLowT-0&scaling=min-zoom&content-scaling=fixed&page-id=221%3A826&starting-point-node-id=1367%3A19019&show-proto-sidebar=1"
+    }
+
+
+  ],
+  "workExperience": [
+    {
+      "id": "w1",
+      "title": "Part-time Tutor",
+      "company": "Eduspace",
+      "description": "Tutoring students in various academic subjects with focus on conceptual understanding",
+      "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "duration": "Aug 2024 - Present",
+        "role": "Part-time Tutor",
+        "highlights": [
+          "Focus on conceptual understanding and application",
+          "Organized detailed records of tutoring sessions",
+          "Tracked and reported student progress effectively"
+        ]
+      }
+    },
+    {
+      "id": "w2",
+      "title": "Student Intern",
+      "company": "Science Centre Singapore",
+      "description": "Developed interactive learning modules and led project delivery",
+      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "duration": "Jan 2022",
+        "role": "Student Intern",
+        "highlights": [
+          "Developed 'Young Engineer Trail' for primary students",
+          "Created online modules for 'Young Digital Fabricator' badge",
+          "Led final presentation after teammate withdrawal",
+          "Ensured on-time project completion under pressure"
+        ]
+      }
+    },
+    {
+      "id": "w3",
+      "title": "Executive Manager of Volunteering Project",
+      "company": "Temasek Junior College",
+      "description": "Led digital literacy project for the elderly community",
+      "thumbnail": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=600&fit=crop",
+      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "details": {
+        "duration": "Jan 2023 - Jun 2023",
+        "role": "Executive Manager",
+        "highlights": [
+          "Spearheaded digital literacy project for elderly",
+          "Coordinated logistics and stakeholder communication",
+          "Created positive growth opportunities for communities"
+        ]
+      }
+    }
+  ],
+  "skills": {
+    "categories": [
+      {
+        "id": "s1",
+        "title": "Programming & Backend",
+        "icon": "Code",
+        "skills": [
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "PHP",
+          "Bash",
+          "Java",
+          "Flask",
+          "Node.js",
+          "Firebase"
+        ],
+        "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=600&fit=crop"
+      },
+      {
+        "id": "s2",
+        "title": "Web & Frontend",
+        "icon": "Layout",
+        "skills": [
+          "HTML",
+          "CSS",
+          "React",
+          "Vue.js",
+          "Bootstrap",
+          "Tailwind CSS",
+          "Responsive Design"
+        ],
+        "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=600&fit=crop"
+      },
+      {
+        "id": "s3",
+        "title": "Data & Analytics",
+        "icon": "BarChart",
+        "skills": [
+          "Excel",
+          "Power Query",
+          "Tableau",
+          "MySQL",
+          "MongoDB",
+          "Pandas",
+          "Matplotlib",
+          "Folium"
+        ],
+        "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop"
+      },
+      {
+        "id": "s4",
+        "title": "Cybersecurity & Systems",
+        "icon": "Shield",
+        "skills": [
+          "Kali Linux",
+          "Metasploitable",
+          "Linux System"
+        ],
+        "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=600&fit=crop"
+      },
+      {
+        "id": "s5",
+        "title": "Tools & Platforms",
+        "icon": "Wrench",
+        "skills": [
+          "Figma",
+          "Signavio",
+          "Odoo",
+          "Azure",
+          "Docker",
+          "Oracle VirtualBox",
+          "Amazon AWS",
+          "Git"
+        ],
+        "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=600&fit=crop"
+      },
+      {
+        "id": "s6",
+        "title": "Languages",
+        "icon": "Globe",
+        "skills": [
+          "English (Proficient)",
+          "Hindi (Proficient)",
+          "Oriya (Proficient)"
+        ],
+        "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=600&fit=crop"
+      }
+    ]
+  },
+  "education": {
+    "university": [
+      {
+        "id": "e1",
+        "institution": "Singapore Management University",
+        "degree": "Bachelor of Science in Information Systems",
+        "period": "Aug 2024 - May 2028",
+        "thumbnail": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=600&fit=crop",
+        "details": {
+          "achievements": [
+            "GPA: Cum Laude (Distinction)",
+            "Double Major: Product Development & Cybersecurity",
+            "Teaching Assistant for Data Management",
+            "Member: SMU Women in Tech, SMU .Hack, SMU AI Club",
+            "UWS STEMentorship 2025 Mentee"
+          ],
+          "courses": [
+            "Algorithms and Programming (Distinction)",
+            "Business Process Analysis (Distinction)",
+            "Data Management (Distinction)",
+            "Economics and Society (Distinction)"
+          ]
+        }
+      }
+    ],
+    "jc": [
+      {
+        "id": "e2",
+        "institution": "Temasek Junior College",
+        "degree": "Integrated Programme (Science Stream)",
+        "period": "Jan 2018 - Dec 2023",
+        "thumbnail": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=600&fit=crop",
+        "details": {
+          "achievements": [
+            "Won 67 first-place trophies in Dance competitions",
+            "Secretary of Indian Cultural Society - tripled Instagram followers",
+            "Member of Modern Dance Club (Hip Hop, Ballet, Cha Cha, Bharathnatyam)",
+            "Member of Infocomm Club - photography & AV equipment",
+            "Citizenship Ambassador & Mathematics Representative"
+          ],
+          "courses": [
+            "Science Stream",
+            "Mathematics",
+            "Physics",
+            "Chemistry"
+          ]
+        }
+      }
+    ]
+  },
+  "awards": [
+    {
+      "id": "a1",
+      "title": "Most Feasible Solution & Finalist",
+      "description": "Recognized for Urbanix - AI-driven urban analytics system at Hack For Cities",
+      "thumbnail": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=600&fit=crop",
+      "organization": "Hack For Cities Hackathon",
+      "date": "2026",
+      "details": {
+        "description": "Awarded Most Feasible Solution for developing an AI-driven policy optimization platform",
+        "impact": [
+          "Multi-objective optimization for urban planning",
+          "Real-time data visualization",
+          "Pareto frontier analysis implementation"
+        ]
+      }
+    },
+    {
+      "id": "a2",
+      "title": "Gold in International Singapore Maths Competition",
+      "description": "First place in international mathematics competition",
+      "thumbnail": "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400&h=600&fit=crop",
+      "organization": "International Singapore Maths Competition",
+      "date": "2017",
+      "details": {
+        "description": "Achieved gold medal in competitive mathematics",
+        "impact": [
+          "Demonstrated strong problem-solving skills",
+          "Competed against international students",
+          "Recognition for mathematical excellence"
+        ]
+      }
+    },
+    {
+      "id": "a3",
+      "title": "First Nationwide for Hindi Examinations",
+      "description": "Top performer in national Hindi language examinations",
+      "thumbnail": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=600&fit=crop",
+      "organization": "National Hindi Examinations",
+      "date": "2016",
+      "details": {
+        "description": "Ranked first nationwide in Hindi language proficiency",
+        "impact": [
+          "Excellence in multilingual communication",
+          "Cultural and linguistic diversity",
+          "National-level achievement"
+        ]
+      }
+    },
+    {
+      "id": "a4",
+      "title": "Bronze in Design Thinking with Robotics",
+      "description": "Recognition for innovative robotics and computational thinking project",
+      "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=600&fit=crop",
+      "organization": "Design Thinking Competition",
+      "date": "2022",
+      "details": {
+        "description": "Awarded bronze for robotics and computational thinking project",
+        "impact": [
+          "Applied design thinking methodology",
+          "Robotics implementation",
+          "Problem-solving innovation"
+        ]
+      }
+    },
+    {
+      "id": "a5",
+      "title": "Bronze in Singapore Math Kangaroo Competition",
+      "description": "Consistent performance in international mathematics challenge",
+      "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=600&fit=crop",
+      "organization": "Math Kangaroo Competition",
+      "date": "2022, 2023",
+      "details": {
+        "description": "Achieved bronze medals in consecutive years",
+        "impact": [
+          "Demonstrated mathematical reasoning",
+          "Consistent high performance",
+          "International competition experience"
+        ]
+      }
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert1",
+      "title": "AWS Certified Cloud Practitioner",
+      "description": "Amazon Web Services cloud computing fundamentals and best practices",
+      "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=600&fit=crop",
+      "organization": "Amazon Web Services",
+      "date": "2025",
+      "credentialId": "AWS-CCP-2025-12345",
+      "details": {
+        "description": "Validated cloud expertise covering AWS services, architecture, and security",
+        "skills": [
+          "Cloud Computing",
+          "AWS Services",
+          "Cloud Architecture",
+          "Security Best Practices"
+        ]
+      },
+      "url": "https://aws.amazon.com/certification/"
+    },
+    {
+      "id": "cert2",
+      "title": "Google Data Analytics Professional Certificate",
+      "description": "Comprehensive data analytics training from data collection to visualization",
+      "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=600&fit=crop",
+      "organization": "Google / Coursera",
+      "date": "2024",
+      "credentialId": "GDAPC-2024-67890",
+      "details": {
+        "description": "Completed hands-on training in data cleaning, analysis, and visualization",
+        "skills": [
+          "Data Cleaning",
+          "SQL",
+          "Tableau",
+          "R Programming",
+          "Data Visualization"
+        ]
+      },
+      "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+    },
+    {
+      "id": "cert3",
+      "title": "Meta Front-End Developer Certificate",
+      "description": "Professional certificate covering modern front-end development practices",
+      "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=600&fit=crop",
+      "organization": "Meta / Coursera",
+      "date": "2024",
+      "credentialId": "META-FE-2024-11223",
+      "details": {
+        "description": "Advanced training in React, responsive design, and modern web development",
+        "skills": [
+          "React",
+          "JavaScript",
+          "HTML/CSS",
+          "UI/UX Design",
+          "Version Control"
+        ]
+      },
+      "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
+    },
+    {
+      "id": "cert4",
+      "title": "CompTIA Security+ Certification",
+      "description": "Industry-standard cybersecurity certification for security fundamentals",
+      "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=600&fit=crop",
+      "organization": "CompTIA",
+      "date": "2025",
+      "credentialId": "COMPTIA-SEC-2025-44556",
+      "details": {
+        "description": "Validated skills in network security, threat management, and risk mitigation",
+        "skills": [
+          "Network Security",
+          "Threat Detection",
+          "Risk Management",
+          "Incident Response",
+          "Cryptography"
+        ]
+      },
+      "url": "https://www.comptia.org/certifications/security"
+    },
+    {
+      "id": "cert5",
+      "title": "Certified Ethical Hacker (CEH)",
+      "description": "Advanced ethical hacking and penetration testing certification",
+      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=600&fit=crop",
+      "organization": "EC-Council",
+      "date": "2025",
+      "credentialId": "CEH-2025-77889",
+      "details": {
+        "description": "Expert-level certification in ethical hacking methodologies and tools",
+        "skills": [
+          "Penetration Testing",
+          "Vulnerability Assessment",
+          "Security Auditing",
+          "Ethical Hacking",
+          "Kali Linux"
+        ]
+      },
+      "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"
+    },
+    {
+      "id": "cert6",
+      "title": "Python for Data Science - IBM",
+      "description": "Data science fundamentals using Python programming",
+      "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=600&fit=crop",
+      "organization": "IBM / Coursera",
+      "date": "2024",
+      "credentialId": "IBM-PY-2024-99001",
+      "details": {
+        "description": "Comprehensive Python training for data analysis and machine learning",
+        "skills": [
+          "Python",
+          "Data Analysis",
+          "Pandas",
+          "NumPy",
+          "Machine Learning"
+        ]
+      },
+      "url": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+    }
+  ],
+  "connect": [
+    {
+      "id": "c1",
+      "title": "GitHub",
+      "description": "Check out my open source contributions and projects",
+      "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=600&fit=crop",
+      "url": "https://github.com/muskandhamuria",
+      "icon": "Github"
+    },
+    {
+      "id": "c2",
+      "title": "LinkedIn",
+      "description": "Let's connect professionally and network",
+      "thumbnail": "https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=400&h=600&fit=crop",
+      "url": "https://linkedin.com/in/muskandhamuria",
+      "icon": "Linkedin"
+    },
+    {
+      "id": "c3",
+      "title": "Email",
+      "description": "Get in touch for collaborations and opportunities",
+      "thumbnail": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400&h=600&fit=crop",
+      "url": "mailto:muskan.dhamuria@example.com",
+      "icon": "Mail"
+    },
+    {
+      "id": "c4",
+      "title": "Instagram",
+      "description": "Follow my journey and creative projects",
+      "thumbnail": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=600&fit=crop",
+      "url": "https://instagram.com/muskandhamuria",
+      "icon": "Instagram"
+    }
+  ]
+}

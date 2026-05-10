@@ -1,0 +1,14 @@
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Prevent scroll on body when modals or landing pages are active */
+body.no-scroll {
+  overflow: hidden;
+}
