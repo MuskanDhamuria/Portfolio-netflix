@@ -19,132 +19,86 @@ interface EducationTimelineProps {
 }
 
 export function EducationTimeline({ university, jc, onItemClick }: EducationTimelineProps) {
-  // Safety checks
   if ((!university || university.length === 0) && (!jc || jc.length === 0)) {
     return null;
   }
 
   const safeUniversity = university || [];
   const safeJc = jc || [];
+  const totalUniversity = safeUniversity.length;
+
+  const renderTimelineSection = (title: string, items: EducationItem[], delayOffset: number) => {
+    if (items.length === 0) {
+      return null;
+    }
+
+    return (
+      <section>
+        <h3 className="text-gray-300 text-sm md:text-base tracking-wide uppercase mb-5 ml-12 md:ml-16">
+          {title}
+        </h3>
+        <div className="space-y-5 md:space-y-7">
+          {items.map((item, index) => (
+            <motion.article
+              key={item.id}
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ delay: (delayOffset + index) * 0.12, duration: 0.45 }}
+              className="relative flex items-start gap-4 md:gap-6 group cursor-pointer"
+              onClick={() => onItemClick(item)}
+            >
+              <div className="relative z-10 flex-shrink-0 pt-1">
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-black border-2 border-red-500 flex items-center justify-center shadow-[0_0_0_4px_rgba(0,0,0,1)] transition-transform duration-200 group-hover:scale-110">
+                  <div className="w-2 h-2 rounded-full bg-red-500" />
+                </div>
+              </div>
+
+              <div className="flex-1 pb-1">
+                <div className="rounded-xl border border-zinc-800 bg-zinc-900/65 hover:bg-zinc-900/90 hover:border-zinc-700 transition-all duration-200 p-4 md:p-5 flex gap-4 md:gap-5">
+                  <div className="w-20 h-24 md:w-24 md:h-28 rounded-md overflow-hidden flex-shrink-0 ring-1 ring-zinc-700">
+                    <img
+                      src={item.thumbnail}
+                      alt={item.institution}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="flex-1 min-w-0">
+                    <p className="inline-block text-[11px] md:text-xs text-red-300 bg-red-500/10 border border-red-500/30 px-2.5 py-1 rounded-full mb-2">
+                      {item.period}
+                    </p>
+                    <h4 className="text-white text-base md:text-lg leading-tight mb-1">{item.degree}</h4>
+                    <p className="text-zinc-300 text-sm md:text-base">{item.institution}</p>
+                    {item.details?.achievements?.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {item.details.achievements.slice(0, 3).map((achievement, i) => (
+                          <span key={`${item.id}-achievement-${i}`} className="text-xs text-zinc-300 bg-zinc-800 px-2 py-1 rounded-md">
+                            {achievement.length > 36 ? `${achievement.substring(0, 36)}...` : achievement}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </section>
+    );
+  };
 
   return (
     <div className="mb-8 md:mb-12">
       <h2 className="text-white px-8 md:px-16 lg:px-20 mb-8">Education</h2>
 
       <div className="px-8 md:px-16 lg:px-20">
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-600 via-red-500 to-transparent" />
-
-          {/* Timeline Items */}
-          <div className="space-y-8 md:space-y-12">
-            {/* University Section */}
-            {safeUniversity.length > 0 && (
-              <div className="mb-12">
-                <h3 className="text-gray-400 mb-6 ml-12 md:ml-20">University</h3>
-                {safeUniversity.map((item, index) => (
-                <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.2, duration: 0.6 }}
-                  className="relative flex gap-6 md:gap-8 group cursor-pointer"
-                  onClick={() => onItemClick(item)}
-                >
-                  {/* Timeline Dot */}
-                  <div className="relative flex-shrink-0">
-                    <div className="w-8 h-8 md:w-12 md:h-12 rounded-full bg-red-600 border-4 border-black flex items-center justify-center group-hover:scale-110 transition-transform z-10">
-                      <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white" />
-                    </div>
-                  </div>
-
-                  {/* Content Card */}
-                  <div className="flex-1 pb-8">
-                    <div className="bg-zinc-900/50 rounded-lg p-4 md:p-6 border border-zinc-800 hover:border-red-600 transition-all hover:bg-zinc-900/80 flex gap-4 md:gap-6">
-                      {/* Thumbnail */}
-                      <div className="w-20 h-28 md:w-28 md:h-40 rounded overflow-hidden flex-shrink-0">
-                        <img
-                          src={item.thumbnail}
-                          alt={item.institution}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                        />
-                      </div>
-
-                      {/* Text Content */}
-                      <div className="flex-1">
-                        <p className="text-gray-400 text-xs md:text-sm mb-1">{item.period}</p>
-                        <h4 className="text-white mb-1">{item.degree}</h4>
-                        <p className="text-gray-300 text-sm md:text-base">{item.institution}</p>
-                        {item.details?.achievements && item.details.achievements.length > 0 && (
-                          <div className="mt-3 flex flex-wrap gap-2">
-                            {item.details.achievements.slice(0, 2).map((achievement, i) => (
-                              <span key={i} className="text-xs text-gray-400 bg-zinc-800 px-2 py-1 rounded">
-                                {achievement.length > 30 ? achievement.substring(0, 30) + "..." : achievement}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-              </div>
-            )}
-
-            {/* JC Section */}
-            {safeJc.length > 0 && (
-              <div>
-                <h3 className="text-gray-400 mb-6 ml-12 md:ml-20">Junior College</h3>
-                {safeJc.map((item, index) => (
-                <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: (university.length + index) * 0.2, duration: 0.6 }}
-                  className="relative flex gap-6 md:gap-8 group cursor-pointer"
-                  onClick={() => onItemClick(item)}
-                >
-                  {/* Timeline Dot */}
-                  <div className="relative flex-shrink-0">
-                    <div className="w-8 h-8 md:w-12 md:h-12 rounded-full bg-red-600 border-4 border-black flex items-center justify-center group-hover:scale-110 transition-transform z-10">
-                      <div className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-white" />
-                    </div>
-                  </div>
-
-                  {/* Content Card */}
-                  <div className="flex-1 pb-8">
-                    <div className="bg-zinc-900/50 rounded-lg p-4 md:p-6 border border-zinc-800 hover:border-red-600 transition-all hover:bg-zinc-900/80 flex gap-4 md:gap-6">
-                      {/* Thumbnail */}
-                      <div className="w-20 h-28 md:w-28 md:h-40 rounded overflow-hidden flex-shrink-0">
-                        <img
-                          src={item.thumbnail}
-                          alt={item.institution}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                        />
-                      </div>
-
-                      {/* Text Content */}
-                      <div className="flex-1">
-                        <p className="text-gray-400 text-xs md:text-sm mb-1">{item.period}</p>
-                        <h4 className="text-white mb-1">{item.degree}</h4>
-                        <p className="text-gray-300 text-sm md:text-base">{item.institution}</p>
-                        {item.details?.achievements && item.details.achievements.length > 0 && (
-                          <div className="mt-3 flex flex-wrap gap-2">
-                            {item.details.achievements.slice(0, 2).map((achievement, i) => (
-                              <span key={i} className="text-xs text-gray-400 bg-zinc-800 px-2 py-1 rounded">
-                                {achievement.length > 30 ? achievement.substring(0, 30) + "..." : achievement}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-              </div>
-            )}
+        <div className="relative pl-1 md:pl-2">
+          <div className="absolute left-[11px] md:left-[15px] top-0 bottom-0 w-px bg-gradient-to-b from-red-500 via-zinc-700 to-transparent" />
+          <div className="space-y-10 md:space-y-12">
+            {renderTimelineSection("University", safeUniversity, 0)}
+            {renderTimelineSection("Junior College", safeJc, totalUniversity)}
           </div>
         </div>
       </div>
