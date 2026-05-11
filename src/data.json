@@ -10,8 +10,8 @@
       "id": "1",
       "title": "Questpass",
       "description": "QuestPass is a fair-access presale platform designed to combat ticket scalping and bot abuse. Instead of selling tickets, QuestPass integrates with official ticketing partners and allows fans to earn presale access by completing engagement-based quests such as music trivia, listening history verification, and mini-games.",
-      "thumbnail": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=600&fit=crop",
-      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "thumbnail": "images/questpass.jpg",
+      "trailerUrl": "videos/questpass.mp4",
       "details": {
         "tech": ["Vue.js", "Vue Router", "Pinia", "Bootstrap 5", "Firebase", "Node.js", "Spotify API", "Gemini API", "Jambase API", "Google Maps API", "EmailJS", "Deezer API"],
         "duration": "4 months",
@@ -29,7 +29,7 @@
       "title": "Urbanix",
       "description": "Implemented multi-objective optimization logic and Pareto frontier analysis to simulate and evaluate urban policy bundles. Developed data ingestion and transformation pipeline for Excel-based urban datasets and real-time visualization dashboards.",
       "thumbnail": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=600&fit=crop",
-      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "trailerUrl": "videos/urbanix.mp4",
       "details": {
         "tech": ["React.js", "TypeScript", "Tailwind CSS", "Recharts", "SheetJS", "Node.js", "Ollama", "JavaScript"],
         "duration": "Hackathon",
@@ -58,29 +58,28 @@
     },
     {
       "id": "4",
-      "title": "Digital transformation of a local business",
-      "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
-      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
-      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "title": "Koryori Hayashi",
+      "description": "Multi pronged solution to enable digital transformation for a local restaurant, including a customer-facing website with online ordering, a data analytics dashboard for sales insights with pricing and inventory management, a digital loyalty program, a social media marketing strategy, queue and table management system and a digital twin.",
+      "thumbnail": "images/koryori.png",
+      "trailerUrl": "videos/koryori.MOV",
       "details": {
-        "tech": ["Tableau", "Power Query", "Excel", "Pandas", "Folium", "Matplotlib"],
+        "tech": ["React.js", "TypeScript", "Tailwind CSS", "Recharts", "Node.js", "Gemini API", "JavaScript", "Supabase"],
         "duration": "4 months",
-        "role": "Data Analyst",
+        "role": "Full Stack Developer",
         "highlights": [
-          "Achieved Higher Distinction for the project",
-          "Analyzed 100,000+ HDB resale transactions from 2015-2024"
+          "Implemented data-driven solutions for restaurant digital transformation"
         ]
       },
-      "githubUrl": "https://github.com/MuskanDhamuria/URBANIX",
-      "liveUrl": "https://questpass-b3680.web.app/"
+      "githubUrl": "https://github.com/MuskanDhamuria/Koryori_Hayashi",
+      "liveUrl": "https://koryorihayashi.my.canva.site/"
     },
 
     {
       "id": "5",
       "title": "PixelPop",
       "description": "A responsive web-based Game Platform that showcases mini-games I have built.",
-      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
-      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "thumbnail": "images/pixelpop.png",
+      "trailerUrl": "videos/pixelpop.mp4",
       "details": {
         "tech": ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Supabase", "Gemini API"],
         "duration": "4 months",
@@ -95,8 +94,8 @@
       "id": "6",
       "title": "SNAPEE!",
       "description": "My team and I applied a full iterative, human-centred design process across multipledevelopment cycles. We conducted user research and empathy analysis to understand the challenges faced by busy students, translated insights into clear functional and usability requirements, and developed a low-fidelity prototype of the app's UI. We then performed a heuristic evaluation to assess usability, identify design flaws, and refine navigation, layout, and feature clarity. We also enhanced the prototype into a more refined design, incorporating structured feedback and usability testing through planned A/B experiments. We analysed results using the Mann-Whitney U Test to improve user flow, accessibility, and overall interaction design, while documenting design decisions and progress throughout.",
-      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
-      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "thumbnail": "images/snapee.png",
+      "trailerUrl": "videos/snapee.mp4",
       "details": {
         "tech": ["Figma", "Maze"],
         "duration": "4 months",
