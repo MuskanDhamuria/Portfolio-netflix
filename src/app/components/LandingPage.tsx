@@ -26,7 +26,7 @@ export function LandingPage({ onEnter }: LandingPageProps) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
           whileHover={{ scale: 1.05 }}
-          className="text-6xl md:text-8xl lg:text-9xl text-[#E50914] tracking-wider mb-8"
+          className="text-6xl md:text-6xl lg:text-6xl text-[#E50914] tracking-wider mb-8"
         >
           MUSKAN DHAMURIA
         </motion.h1>
