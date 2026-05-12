@@ -245,11 +245,8 @@
         "skills": [
           "Figma",
           "Signavio",
-          "Odoo",
           "Azure",
           "Docker",
-          "Oracle VirtualBox",
-          "Amazon AWS",
           "Git"
         ],
         "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=600&fit=crop"
@@ -274,7 +271,7 @@
         "institution": "Singapore Management University",
         "degree": "Bachelor of Science in Information Systems",
         "period": "Aug 2024 - May 2028",
-        "thumbnail": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=600&fit=crop",
+        "thumbnail": "images/smu.png",
         "details": {
           "achievements": [
             "GPA: Cum Laude (Distinction)",
@@ -332,84 +329,77 @@
   "awards": [
     {
       "id": "a1",
-      "title": "Most Feasible Solution & Finalist",
-      "description": "Recognized for Urbanix - AI-driven urban analytics system at Hack For Cities",
-      "thumbnail": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=600&fit=crop",
-      "organization": "Hack For Cities Hackathon",
-      "date": "2026",
-      "details": {
-        "description": "Awarded Most Feasible Solution for developing an AI-driven policy optimization platform",
-        "impact": [
-          "Multi-objective optimization for urban planning",
-          "Real-time data visualization",
-          "Pareto frontier analysis implementation"
-        ]
-      }
+      "title": "Most Feasible Solution - Hack For Cities Hackathon 2026",
+      "description": "Awarded for developing URBANIX, a multi-objective optimization tool and Pareto frontier analysis for urban policy evaluation, demonstrating practical feasibility and impact in addressing urban challenges.",
+      "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=600&fit=crop",
+      "githubUrl": "https://github.com/yourusername/urbanix",
+      "date": "2026"
     },
     {
       "id": "a2",
-      "title": "Gold in International Singapore Maths Competition",
-      "description": "First place in international mathematics competition",
-      "thumbnail": "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=400&h=600&fit=crop",
-      "organization": "International Singapore Maths Competition",
-      "date": "2017",
-      "details": {
-        "description": "Achieved gold medal in competitive mathematics",
-        "impact": [
-          "Demonstrated strong problem-solving skills",
-          "Competed against international students",
-          "Recognition for mathematical excellence"
-        ]
-      }
+      "title": "Honourable Mention - Fintech Innovator's Hackathon 2026",
+      "description": "Awarded for developing FinTellect, a financial health platform that uses a Digital Financial Twin to analyze, simulate, and optimize personal finances through AI-driven insights, risk assessment, and predictive modeling.",
+      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
+      "githubUrl": "https://github.com/yourusername/fintech-hackathon",
+      "date": "2026"
     },
     {
       "id": "a3",
-      "title": "First Nationwide for Hindi Examinations",
-      "description": "Top performer in national Hindi language examinations",
-      "thumbnail": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=600&fit=crop",
-      "organization": "National Hindi Examinations",
-      "date": "2016",
-      "details": {
-        "description": "Ranked first nationwide in Hindi language proficiency",
-        "impact": [
-          "Excellence in multilingual communication",
-          "Cultural and linguistic diversity",
-          "National-level achievement"
-        ]
-      }
+      "title": "Bronze in Design Thinking with Robotics and Computational Thinking",
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2022"
     },
     {
       "id": "a4",
-      "title": "Bronze in Design Thinking with Robotics",
-      "description": "Recognition for innovative robotics and computational thinking project",
-      "thumbnail": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=600&fit=crop",
-      "organization": "Design Thinking Competition",
-      "date": "2022",
-      "details": {
-        "description": "Awarded bronze for robotics and computational thinking project",
-        "impact": [
-          "Applied design thinking methodology",
-          "Robotics implementation",
-          "Problem-solving innovation"
-        ]
-      }
+      "title": "Bronze in Queen's Commonwealth Essay Competition",
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2022"
     },
     {
       "id": "a5",
       "title": "Bronze in Singapore Math Kangaroo Competition",
-      "description": "Consistent performance in international mathematics challenge",
-      "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=600&fit=crop",
-      "organization": "Math Kangaroo Competition",
-      "date": "2022, 2023",
-      "details": {
-        "description": "Achieved bronze medals in consecutive years",
-        "impact": [
-          "Demonstrated mathematical reasoning",
-          "Consistent high performance",
-          "International competition experience"
-        ]
-      }
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2022, 2023"
+    },
+    {
+      "id": "a6",
+      "title": "First nationwide for MTL examinations",
+      "description": "Awarded for achieving the highest score in Hindi across Singapore",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2016"
+    }, 
+    {
+      "id": "a7",
+      "title": "Gold in International Singapore Maths Competition-",
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2017"
+    },
+    {
+      "id": "a8",
+      "title": "Gold in International Singapore Maths Competition",
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2018"
+    },
+    {
+      "id": "a9",
+      "title": "Honourable mention in International Bebras Challenge on Informatics",
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2022"
+    },
+    {
+      "id": "a10",
+      "title": "Silver in International Science Competition VANDA",
+      "description": "International Olympiad",
+      "thumbnail": "images/questpass.jpg",
+      "date": "2019"
     }
+
   ],
   "certificates": [
     {

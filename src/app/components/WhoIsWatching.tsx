@@ -15,7 +15,6 @@ export function WhoIsWatching({ onSelectProfile }: WhoIsWatchingProps) {
   const profiles: Profile[] = [
     { id: "1", name: "You", color: "#00CED1" },
     { id: "2", name: "Me", color: "#f0e54a", avatarImage: "/images/muskan.png" },
-    { id: "3", name: "Guest", color: "#ff476f" },
   ];
 
   return (
