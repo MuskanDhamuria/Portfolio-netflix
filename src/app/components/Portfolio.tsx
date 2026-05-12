@@ -12,7 +12,7 @@ import data from "../../data.json";
 
 export function Portfolio() {
   const [selectedItem, setSelectedItem] = useState<any>(null);
-  const standardCardWidth = "w-[200px] md:w-[280px] flex-none";
+  const standardCardWidth = "w-[170px] md:w-[240px] flex-none";
   const standardCardAspect = "aspect-[2/3]";
 
   // Safety check for data

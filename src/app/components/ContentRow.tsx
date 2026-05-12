@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 interface ContentItem {
   id: string;
   title: string;
+  role?: string;
   thumbnail: string;
   description?: string;
 }
@@ -95,9 +96,12 @@ export function ContentRow({
                     target.src = "https://via.placeholder.com/400x600?text=Image+Error";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 opacity-0 group-hover/card:opacity-100 transition-opacity">
-                  <p className="text-white text-sm truncate">{item.title}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-90 transition-opacity group-hover/card:opacity-100" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <p className="text-white text-sm font-medium truncate">{item.title}</p>
+                  {item.role && (
+                    <p className="mt-0.5 text-[11px] text-gray-300 truncate">{item.role}</p>
+                  )}
                 </div>
               </div>
             </motion.div>

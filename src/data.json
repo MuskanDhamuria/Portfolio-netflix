@@ -26,6 +26,21 @@
     },
     {
       "id": "2",
+      "title": "Web Vulnerability Scanner",
+      "description": "Automatically detects common security flaws such as SQL Injection, reflected XSS, and missing HTTP security headers. The tool uses a BFS-based crawler to explore web applications, test inputs in forms and parameters, and identify vulnerabilities with a risk-based scoring system (HIGH/MEDIUM/LOW). It includes features like rate limiting, stealth headers, and duplicate URL handling to simulate realistic scanning behavior, and generates detailed reports in JSON, HTML, and CSV formats for analysis.",
+      "thumbnail": "images/webvulnerabilityscanner.png",
+      "trailerUrl": "videos/webvulnerabilityscanner.mp4",
+      "details": {
+        "tech": ["Python", "Requests & BeautifulSoup", "Web Crawling (BFS)", "Application Security Testing (SQLi, XSS)","HTTP Security Headers", "Data Reporting (JSON, HTML, CSV)"],
+        "duration": "3 months",
+        "role": "Application Security Developer",
+        "highlights": [
+          "Solo project"]
+      },
+      "githubUrl": "https://github.com/MuskanDhamuria/WebVulnerabilityScanner"
+    },
+    {
+      "id": "3",
       "title": "Urbanix",
       "description": "Implemented multi-objective optimization logic and Pareto frontier analysis to simulate and evaluate urban policy bundles. Developed data ingestion and transformation pipeline for Excel-based urban datasets and real-time visualization dashboards.",
       "thumbnail": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=600&fit=crop",
@@ -41,7 +56,7 @@
       "githubUrl": "https://github.com/MuskanDhamuria/URBANIX"
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "Housing Price Analysis Singapore",
       "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
       "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
@@ -57,7 +72,7 @@
       }
     },
     {
-      "id": "4",
+      "id": "5",
       "title": "Koryori Hayashi",
       "description": "Multi pronged solution to enable digital transformation for a local restaurant, including a customer-facing website with online ordering, a data analytics dashboard for sales insights with pricing and inventory management, a digital loyalty program, a social media marketing strategy, queue and table management system and a digital twin.",
       "thumbnail": "images/koryori.png",
@@ -75,7 +90,7 @@
     },
 
     {
-      "id": "5",
+      "id": "6",
       "title": "PixelPop",
       "description": "A responsive web-based Game Platform that showcases mini-games I have built.",
       "thumbnail": "images/pixelpop.png",
@@ -91,7 +106,7 @@
       "githubUrl": "https://github.com/MuskanDhamuria/PixelPop"
     },
         {
-      "id": "6",
+      "id": "7",
       "title": "SNAPEE!",
       "description": "My team and I applied a full iterative, human-centred design process across multipledevelopment cycles. We conducted user research and empathy analysis to understand the challenges faced by busy students, translated insights into clear functional and usability requirements, and developed a low-fidelity prototype of the app's UI. We then performed a heuristic evaluation to assess usability, identify design flaws, and refine navigation, layout, and feature clarity. We also enhanced the prototype into a more refined design, incorporating structured feedback and usability testing through planned A/B experiments. We analysed results using the Mann-Whitney U Test to improve user flow, accessibility, and overall interaction design, while documenting design decisions and progress throughout.",
       "thumbnail": "images/snapee.png",
@@ -111,14 +126,14 @@
   "workExperience": [
     {
       "id": "w1",
-      "title": "Part-time Tutor",
-      "company": "Eduspace",
-      "description": "Tutoring students in various academic subjects with focus on conceptual understanding",
-      "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=600&fit=crop",
+      "title": "RPA Software Engineer Intern",
+      "company": "SP group",
+      "description": "Designed and implemented RPA scripts using .NET, JavaScript, and HTML, focusing on modular logic, error handling, and performance optimization. Engineered automation solutions using Automation Anywhere to replace manual workflows with scalable, code-driven processes. Integrated automation workflows with existing systems, debugged and resolved runtime issues, and contributed to improving system reliability and efficiency through structured testing and iteration.",
+      "thumbnail": "images/spgroup.png",
       "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
       "details": {
-        "duration": "Aug 2024 - Present",
-        "role": "Part-time Tutor",
+        "duration": "July 2026 - Present",
+        "role": "RPA Software Engineer Intern",
         "highlights": [
           "Focus on conceptual understanding and application",
           "Organized detailed records of tutoring sessions",
@@ -128,13 +143,13 @@
     },
     {
       "id": "w2",
-      "title": "Student Intern",
+      "title": "Technical Intern",
       "company": "Science Centre Singapore",
-      "description": "Developed interactive learning modules and led project delivery",
-      "thumbnail": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=600&fit=crop",
+      "description": "Developed interactive digital learning solutions for STEM education programmes, including a web-based “Young Engineer Trail” that tracked student progress and badge completion through dynamic quizzes, and an online course platform for the Young Digital Fabricator programme covering multiple modules. Translated educational content into structured, user-friendly digital workflows, and ensured smooth delivery under tight timelines by independently managing development and presenting the final solution.",
+      "thumbnail": "images/sciencecentre.png",
       "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
       "details": {
-        "duration": "Jan 2022",
+        "duration": "Jan 2022 - Feb 2022",
         "role": "Student Intern",
         "highlights": [
           "Developed 'Young Engineer Trail' for primary students",
@@ -146,10 +161,10 @@
     },
     {
       "id": "w3",
-      "title": "Executive Manager of Volunteering Project",
+      "title": "Executive Manager",
       "company": "Temasek Junior College",
       "description": "Led digital literacy project for the elderly community",
-      "thumbnail": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=600&fit=crop",
+      "thumbnail": "images/tjc.png",
       "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
       "details": {
         "duration": "Jan 2023 - Jun 2023",
@@ -264,15 +279,27 @@
           "achievements": [
             "GPA: Cum Laude (Distinction)",
             "Double Major: Product Development & Cybersecurity",
-            "Teaching Assistant for Data Management",
+            "Teaching Assistant: Data Management",
             "Member: SMU Women in Tech, SMU .Hack, SMU AI Club",
-            "UWS STEMentorship 2025 Mentee"
+            "UWS STEMentorship 2025 Mentee",
+            "UWS STEM First Fintech Programme 2026 Participant"
+
+
+
           ],
           "courses": [
-            "Algorithms and Programming (Distinction)",
-            "Business Process Analysis (Distinction)",
-            "Data Management (Distinction)",
-            "Economics and Society (Distinction)"
+            "Algorithms and Programming",
+            "Foundations of Cybersecurity",
+            "Web Application Development",
+            "Computational Thinking and Programming",
+            "Data Management",
+            "Modeling & Data Analytics",
+            "Interaction Design and Prototyping",
+            "Business Process Analysis & Solutioning",
+            "Digital Business - Technologies and Transformation",
+            "Enterprise Solution Development",
+            "Enterprise Solution Management",
+            "Computing Fundamentals"
           ]
         }
       }
@@ -283,7 +310,7 @@
         "institution": "Temasek Junior College",
         "degree": "Integrated Programme (Science Stream)",
         "period": "Jan 2018 - Dec 2023",
-        "thumbnail": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=600&fit=crop",
+        "thumbnail": "images/tjc.png",
         "details": {
           "achievements": [
             "Won 67 first-place trophies in Dance competitions",
