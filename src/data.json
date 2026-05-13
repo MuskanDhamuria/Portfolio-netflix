@@ -27,7 +27,7 @@
     {
       "id": "2",
       "title": "Web Vulnerability Scanner",
-      "description": "Automatically detects common security flaws such as SQL Injection, reflected XSS, and missing HTTP security headers. The tool uses a BFS-based crawler to explore web applications, test inputs in forms and parameters, and identify vulnerabilities with a risk-based scoring system (HIGH/MEDIUM/LOW). It includes features like rate limiting, stealth headers, and duplicate URL handling to simulate realistic scanning behavior, and generates detailed reports in JSON, HTML, and CSV formats for analysis.",
+      "description": "Detects common security flaws such as SQL Injection, reflected XSS, and missing HTTP security headers. The tool uses a BFS-based crawler to explore web applications, test inputs in forms and parameters, and identify vulnerabilities with a risk-based scoring system (HIGH/MEDIUM/LOW). It includes features like rate limiting, stealth headers, and duplicate URL handling to simulate realistic scanning behavior, and generates detailed reports in JSON, HTML, and CSV formats for analysis.",
       "thumbnail": "images/webvulnerabilityscanner.png",
       "trailerUrl": "videos/webvulnerabilityscanner.mp4",
       "details": {
