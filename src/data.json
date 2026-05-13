@@ -191,9 +191,8 @@
           "Bash",
           "Java",
           "Flask",
-          "Node.js",
-          "Firebase"
-        ],
+          "Node.js"
+                ],
         "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=600&fit=crop"
       },
       {
@@ -220,7 +219,6 @@
           "Power Query",
           "Tableau",
           "MySQL",
-          "MongoDB",
           "Pandas",
           "Matplotlib",
           "Folium"
@@ -247,8 +245,7 @@
           "Signavio",
           "Azure",
           "Docker",
-          "Git"
-        ],
+          "Git"     ],
         "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=600&fit=crop"
       },
       {
