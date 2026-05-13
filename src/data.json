@@ -3,7 +3,7 @@
     "name": "MUSKAN DHAMURIA",
     "tagline": "Information Systems Student | Product Development & Cybersecurity",
     "description": "Building innovative solutions at the intersection of technology and user experience. Passionate about full stack development, data analytics, and cybersecurity.  ",
-    "videoUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4"
+    "videoUrl": "videos/background.mp4"
   },
   "featuredProjects": [
     {
@@ -59,8 +59,8 @@
       "id": "4",
       "title": "Housing Price Analysis Singapore",
       "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
-      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
-      "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "thumbnail": "images/econs.png",
+      "trailerUrl": "images/econstableau.png",
       "details": {
         "tech": ["Tableau", "Power Query", "Excel", "Pandas", "Folium", "Matplotlib"],
         "duration": "4 months",
@@ -148,6 +148,7 @@
       "description": "Developed interactive digital learning solutions for STEM education programmes, including a web-based “Young Engineer Trail” that tracked student progress and badge completion through dynamic quizzes, and an online course platform for the Young Digital Fabricator programme covering multiple modules. Translated educational content into structured, user-friendly digital workflows, and ensured smooth delivery under tight timelines by independently managing development and presenting the final solution.",
       "thumbnail": "images/sciencecentre.png",
       "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
+      "recommendationletter": "images/scsrecommendation.png",
       "details": {
         "duration": "Jan 2022 - Feb 2022",
         "role": "Student Intern",
@@ -163,7 +164,7 @@
       "id": "w3",
       "title": "Executive Manager",
       "company": "Temasek Junior College",
-      "description": "Led digital literacy project for the elderly community",
+      "description": "Led digital literacy volunteer project for the elderly community",
       "thumbnail": "images/tjc.png",
       "trailerUrl": "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4",
       "details": {
@@ -314,10 +315,12 @@
             "Citizenship Ambassador & Mathematics Representative"
           ],
           "courses": [
-            "Science Stream",
+            "Chemistry",
             "Mathematics",
-            "Physics",
-            "Chemistry"
+            "Biology",
+            "Economics",
+            "General Paper",
+            "Project Work" 
           ]
         }
       }
@@ -432,109 +435,48 @@
       "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
     },
     {
-      "id": "cert3",
-      "title": "Meta Front-End Developer Certificate",
-      "description": "Professional certificate covering modern front-end development practices",
-      "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=600&fit=crop",
-      "organization": "Meta / Coursera",
-      "date": "2024",
-      "credentialId": "META-FE-2024-11223",
-      "details": {
-        "description": "Advanced training in React, responsive design, and modern web development",
-        "skills": [
-          "React",
-          "JavaScript",
-          "HTML/CSS",
-          "UI/UX Design",
-          "Version Control"
-        ]
-      },
-      "url": "https://www.coursera.org/professional-certificates/meta-front-end-developer"
-    },
-    {
-      "id": "cert4",
-      "title": "CompTIA Security+ Certification",
-      "description": "Industry-standard cybersecurity certification for security fundamentals",
-      "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=600&fit=crop",
-      "organization": "CompTIA",
-      "date": "2025",
-      "credentialId": "COMPTIA-SEC-2025-44556",
-      "details": {
-        "description": "Validated skills in network security, threat management, and risk mitigation",
-        "skills": [
-          "Network Security",
-          "Threat Detection",
-          "Risk Management",
-          "Incident Response",
-          "Cryptography"
-        ]
-      },
-      "url": "https://www.comptia.org/certifications/security"
-    },
-    {
-      "id": "cert5",
-      "title": "Certified Ethical Hacker (CEH)",
-      "description": "Advanced ethical hacking and penetration testing certification",
-      "thumbnail": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=600&fit=crop",
-      "organization": "EC-Council",
-      "date": "2025",
-      "credentialId": "CEH-2025-77889",
-      "details": {
-        "description": "Expert-level certification in ethical hacking methodologies and tools",
-        "skills": [
-          "Penetration Testing",
-          "Vulnerability Assessment",
-          "Security Auditing",
-          "Ethical Hacking",
-          "Kali Linux"
-        ]
-      },
-      "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"
-    },
-    {
       "id": "cert6",
-      "title": "Python for Data Science - IBM",
-      "description": "Data science fundamentals using Python programming",
-      "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=600&fit=crop",
-      "organization": "IBM / Coursera",
-      "date": "2024",
-      "credentialId": "IBM-PY-2024-99001",
+      "title": "AI100: Python Programming and Data Visualisation",
+      "description": "Developed strong data analysis and visualization skills using Python, leveraging libraries such as Pandas for data manipulation, Matplotlib for visual insights, and Folium for interactive geospatial mapping.",
+      "thumbnail": "images/ai100.png",
+      "organization": "Heicoders Academy",
+      "date": "2025",
+      
       "details": {
-        "description": "Comprehensive Python training for data analysis and machine learning",
         "skills": [
           "Python",
-          "Data Analysis",
+          "Matplotlib",
           "Pandas",
-          "NumPy",
-          "Machine Learning"
+          "Folium",
+          "Data Visualization"
         ]
       },
-      "url": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+      "url": "https://cert.heicodersacademy.com/34ITP3U0XF"
     }
   ],
   "connect": [
     {
       "id": "c1",
       "title": "GitHub",
-      "description": "Check out my open source contributions and projects",
+      "description": "Check out my projects!",
       "thumbnail": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=400&h=600&fit=crop",
-      "url": "https://github.com/muskandhamuria",
+      "url": "https://github.com/MuskanDhamuria",
       "icon": "Github"
     },
     {
       "id": "c2",
       "title": "LinkedIn",
-      "description": "Let's connect professionally and network",
-      "thumbnail": "https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=400&h=600&fit=crop",
+      "description": "Let's connect professionally and network!",
+      "thumbnail": "https://www.linkedin.com/in/muskan-d-2a81a2331/",
       "url": "https://linkedin.com/in/muskandhamuria",
       "icon": "Linkedin"
     },
     {
       "id": "c3",
       "title": "Email",
-      "description": "Get in touch for collaborations and opportunities",
+      "description": "Get in touch for collaborations, opportunities, or just to say hi!",
       "thumbnail": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400&h=600&fit=crop",
-      "url": "mailto:muskan.dhamuria@example.com",
+      "url": "mailto:muskandhamuria3k@gmail.com",
       "icon": "Mail"
     }
   ]

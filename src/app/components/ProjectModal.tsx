@@ -42,6 +42,12 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
+  const isImageMedia = (url?: string) => {
+    if (!url) return false;
+    const cleanUrl = url.split("?")[0].split("#")[0].toLowerCase();
+    return /\.(jpg|jpeg|png|gif|webp|avif|svg)$/.test(cleanUrl);
+  };
+
   useEffect(() => {
     if (project) {
       document.body.style.overflow = "hidden";
@@ -87,15 +93,23 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             {/* Video/Thumbnail */}
             <div className="relative w-full aspect-video bg-black">
               {project.trailerUrl ? (
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="w-full h-full object-cover"
-                >
-                  <source src={project.trailerUrl} type="video/mp4" />
-                </video>
+                isImageMedia(project.trailerUrl) ? (
+                  <img
+                    src={project.trailerUrl}
+                    alt={`${project.title} preview`}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
+                    <source src={project.trailerUrl} />
+                  </video>
+                )
               ) : (
                 <img
                   src={project.thumbnail}
