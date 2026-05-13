@@ -143,7 +143,7 @@
     },
     {
       "id": "w2",
-      "title": "Technical Intern",
+      "title": "Tech Intern",
       "company": "Science Centre Singapore",
       "description": "Developed interactive digital learning solutions for STEM education programmes, including a web-based “Young Engineer Trail” that tracked student progress and badge completion through dynamic quizzes, and an online course platform for the Young Digital Fabricator programme covering multiple modules. Translated educational content into structured, user-friendly digital workflows, and ensured smooth delivery under tight timelines by independently managing development and presenting the final solution.",
       "thumbnail": "images/sciencecentre.png",
@@ -331,72 +331,65 @@
       "id": "a1",
       "title": "Most Feasible Solution - Hack For Cities Hackathon 2026",
       "description": "Awarded for developing URBANIX, a multi-objective optimization tool and Pareto frontier analysis for urban policy evaluation, demonstrating practical feasibility and impact in addressing urban challenges.",
-      "thumbnail": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=600&fit=crop",
-      "githubUrl": "https://github.com/yourusername/urbanix",
+      "thumbnail": "images/urbanixcert.png",
+      "githubUrl": "https://github.com/MuskanDhamuria/URBANIX",
       "date": "2026"
     },
     {
       "id": "a2",
       "title": "Honourable Mention - Fintech Innovator's Hackathon 2026",
       "description": "Awarded for developing FinTellect, a financial health platform that uses a Digital Financial Twin to analyze, simulate, and optimize personal finances through AI-driven insights, risk assessment, and predictive modeling.",
-      "thumbnail": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
-      "githubUrl": "https://github.com/yourusername/fintech-hackathon",
+      "thumbnail": "images/fintellect.png",
+      "githubUrl": "https://github.com/MuskanDhamuria/FinTellect",
       "date": "2026"
     },
     {
       "id": "a3",
       "title": "Bronze in Design Thinking with Robotics and Computational Thinking",
-      "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
+      "description": "International Olympiad. Country rank-7. School rank-1.",
+      "thumbnail": "images/drct22.png",
       "date": "2022"
     },
     {
       "id": "a4",
       "title": "Bronze in Queen's Commonwealth Essay Competition",
       "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
+      "thumbnail": "images/queensessaycomp.png",
       "date": "2022"
     },
     {
       "id": "a5",
       "title": "Bronze in Singapore Math Kangaroo Competition",
-      "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
-      "date": "2022, 2023"
+      "description": "International Olympiad. Country rank-23. School rank-1.",
+      "thumbnail": "images/smkc23.png",
+      "date": "2023"
     },
     {
       "id": "a6",
       "title": "First nationwide for MTL examinations",
       "description": "Awarded for achieving the highest score in Hindi across Singapore",
-      "thumbnail": "images/questpass.jpg",
+      "thumbnail": "images/hindi.png",
       "date": "2016"
     }, 
     {
       "id": "a7",
-      "title": "Gold in International Singapore Maths Competition-",
-      "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
-      "date": "2017"
-    },
-    {
-      "id": "a8",
       "title": "Gold in International Singapore Maths Competition",
       "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
-      "date": "2018"
+      "thumbnail": "images/ismc16.png",
+      "date": "2016"
     },
     {
       "id": "a9",
       "title": "Honourable mention in International Bebras Challenge on Informatics",
-      "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
+      "description": "International Olympiad. Country rank-15. School rank-1.",
+      "thumbnail": "images/bebras.png",
       "date": "2022"
     },
     {
       "id": "a10",
       "title": "Silver in International Science Competition VANDA",
-      "description": "International Olympiad",
-      "thumbnail": "images/questpass.jpg",
+      "description": "International Olympiad.",
+      "thumbnail": "images/vanda.png",
       "date": "2019"
     }
 
