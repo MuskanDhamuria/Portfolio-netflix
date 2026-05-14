@@ -17,40 +17,46 @@ interface AwardsSectionProps {
 
 export function AwardsSection({ items }: AwardsSectionProps) {
   const [activeAward, setActiveAward] = useState<AwardItem | null>(null);
-  const [isInView, setIsInView] = useState(false);
-  const sectionRef = useRef<HTMLElement | null>(null);
 
   if (!items || !Array.isArray(items) || items.length === 0) {
     return null;
   }
 
-  useEffect(() => {
-    const node = sectionRef.current;
-    if (!node) {
-      return;
-    }
+  const Card = ({ item, index }: { item: AwardItem; index: number }) => {
+    const [isVisible, setIsVisible] = useState(false);
+    const cardRef = useRef<HTMLButtonElement | null>(null);
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-      },
-      {
-        threshold: 0.3,
-        rootMargin: "0px 0px -10% 0px",
+    useEffect(() => {
+      const node = cardRef.current;
+      if (!node) {
+        return;
       }
-    );
 
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, []);
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        },
+        {
+          threshold: 0.25,
+          rootMargin: "0px 0px -8% 0px",
+        }
+      );
 
-  const Card = ({ item, index }: { item: AwardItem; index: number }) => (
-    <button
-      type="button"
-      onClick={() => setActiveAward(item)}
-      className={`award-card ${isInView ? "award-card-visible" : ""}`}
-      style={{ transitionDelay: `${index * 120}ms` }}
-    >
+      observer.observe(node);
+      return () => observer.disconnect();
+    }, []);
+
+    return (
+      <button
+        ref={cardRef}
+        type="button"
+        onClick={() => setActiveAward(item)}
+        className={`award-card ${isVisible ? "award-card-visible" : ""}`}
+        style={{ transitionDelay: `${index * 100}ms` }}
+      >
       <div className="award-title-wrap">
         <p className="award-title">{item.title}</p>
       </div>
@@ -80,11 +86,12 @@ export function AwardsSection({ items }: AwardsSectionProps) {
           </a>
         )}
       </div>
-    </button>
-  );
+      </button>
+    );
+  };
 
   return (
-    <section ref={sectionRef} className="mb-8 bg-black md:mb-12">
+    <section className="mb-8 bg-black md:mb-12">
       <h2 className="mb-4 px-8 text-white md:px-16 lg:px-20">Awards</h2>
 
       <div className="award-grid px-8 md:px-16 lg:px-20">
