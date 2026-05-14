@@ -4,6 +4,16 @@ import { useState, useEffect } from "react";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const navItems = [
+    { label: "Home", href: "#home" },
+    { label: "Projects", href: "#projects" },
+    { label: "Experience", href: "#experience" },
+    { label: "Skills", href: "#skills" },
+    { label: "Education", href: "#education" },
+    { label: "Awards", href: "#awards" },
+    { label: "Certificates", href: "#certificates" },
+    { label: "Connect", href: "#connect" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,30 +42,19 @@ export function Navbar() {
         <div className="flex items-center gap-8">
           <h1 className="text-red-600 tracking-tight">MD</h1>
           <div className="hidden md:flex items-center gap-6 text-sm">
-            <button className="text-white hover:text-gray-300 transition-colors">
-              Home
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Projects
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Experience
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Skills
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Education
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Awards
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Certificates
-            </button>
-            <button className="text-gray-300 hover:text-white transition-colors">
-              Connect
-            </button>
+            {navItems.map((item, index) => (
+              <a
+                key={item.label}
+                href={item.href}
+                className={`transition-colors ${
+                  index === 0
+                    ? "text-white hover:text-gray-300"
+                    : "text-gray-300 hover:text-white"
+                }`}
+              >
+                {item.label}
+              </a>
+            ))}
           </div>
         </div>
 

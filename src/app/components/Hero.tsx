@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Play, Info } from "lucide-react";
+import { Download, Info } from "lucide-react";
 
 interface HeroProps {
   name: string;
@@ -52,14 +52,21 @@ export function Hero({ name, tagline, description, videoUrl }: HeroProps) {
           </p>
 
           <div className="flex gap-4">
-            <button className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded hover:bg-white/90 transition-colors">
-              <Play className="w-5 h-5" fill="currentColor" />
-              <span>View Projects</span>
-            </button>
-            <button className="flex items-center gap-2 bg-gray-500/70 text-white px-8 py-3 rounded hover:bg-gray-500/50 transition-colors">
+            <a
+              href="/resume.pdf"
+              download
+              className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded hover:bg-white/90 transition-colors"
+            >
+              <Download className="w-5 h-5" />
+              <span>Download Resume</span>
+            </a>
+            <a
+              href="#experience"
+              className="flex items-center gap-2 bg-gray-500/70 text-white px-8 py-3 rounded hover:bg-gray-500/50 transition-colors"
+            >
               <Info className="w-5 h-5" />
               <span>More Info</span>
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

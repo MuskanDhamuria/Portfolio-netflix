@@ -31,57 +31,77 @@ export function Portfolio() {
       <Navbar />
 
       {/* Hero Section */}
-      <Hero
-        name={data.hero.name}
-        tagline={data.hero.tagline}
-        description={data.hero.description}
-        videoUrl={data.hero.videoUrl}
-      />
+      <section id="home" className="scroll-mt-24">
+        <Hero
+          name={data.hero.name}
+          tagline={data.hero.tagline}
+          description={data.hero.description}
+          videoUrl={data.hero.videoUrl}
+        />
+      </section>
 
       {/* Content Rows */}
       <div className="relative -mt-32 z-10 pb-16">
         {data.featuredProjects && (
-          <ContentRow
-            title="Featured Projects"
-            items={data.featuredProjects}
-            onItemClick={setSelectedItem}
-            cardWidthClassName={standardCardWidth}
-            cardAspectClassName={standardCardAspect}
-          />
+          <section id="projects" className="scroll-mt-24">
+            <ContentRow
+              title="Featured Projects"
+              items={data.featuredProjects}
+              onItemClick={setSelectedItem}
+              cardWidthClassName={standardCardWidth}
+              cardAspectClassName={standardCardAspect}
+            />
+          </section>
         )}
 
         {data.workExperience && (
-          <ContentRow
-            title="Work Experience"
-            items={data.workExperience}
-            onItemClick={setSelectedItem}
-            cardWidthClassName={standardCardWidth}
-            cardAspectClassName={standardCardAspect}
-          />
+          <section id="experience" className="scroll-mt-24">
+            <ContentRow
+              title="Work Experience"
+              items={data.workExperience}
+              onItemClick={setSelectedItem}
+              cardWidthClassName={standardCardWidth}
+              cardAspectClassName={standardCardAspect}
+            />
+          </section>
         )}
 
         {data.skills && data.skills.categories && (
-          <SkillsSection categories={data.skills.categories} />
+          <section id="skills" className="scroll-mt-24">
+            <SkillsSection categories={data.skills.categories} />
+          </section>
         )}
 
         {data.education && (
-          <EducationTimeline
-            university={data.education.university}
-            jc={data.education.jc}
-            onItemClick={setSelectedItem}
-          />
+          <section id="education" className="scroll-mt-24">
+            <EducationTimeline
+              university={data.education.university}
+              jc={data.education.jc}
+              onItemClick={setSelectedItem}
+            />
+          </section>
         )}
 
-        {data.awards && <AwardsSection items={data.awards} />}
+        {data.awards && (
+          <section id="awards" className="scroll-mt-24">
+            <AwardsSection items={data.awards} />
+          </section>
+        )}
 
         {data.certificates && (
-          <CertificatesSection
-            items={data.certificates}
-            onItemClick={setSelectedItem}
-          />
+          <section id="certificates" className="scroll-mt-24">
+            <CertificatesSection
+              items={data.certificates}
+              onItemClick={setSelectedItem}
+            />
+          </section>
         )}
 
-        {data.connect && <ConnectSection items={data.connect} />}
+        {data.connect && (
+          <section id="connect" className="scroll-mt-24">
+            <ConnectSection items={data.connect} />
+          </section>
+        )}
       </div>
 
       {/* Project Modal */}
