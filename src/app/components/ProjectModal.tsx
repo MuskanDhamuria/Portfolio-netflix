@@ -20,6 +20,7 @@ interface Project {
   description: string;
   thumbnail: string;
   trailerUrl?: string;
+  recommendationletter?: string;
   details?: ProjectDetails;
   liveUrl?: string;
   githubUrl?: string;
@@ -268,6 +269,17 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-3">
+                {project.recommendationletter && (
+                  <a
+                    href={project.recommendationletter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-zinc-700 text-white px-6 py-3 rounded hover:bg-zinc-600 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    <span>Recommendation Letter</span>
+                  </a>
+                )}
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
