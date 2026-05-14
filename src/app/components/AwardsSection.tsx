@@ -104,7 +104,7 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         .award-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
-          gap: 18px;
+          gap: 22px;
           justify-content: center;
         }
 
@@ -112,13 +112,17 @@ export function AwardsSection({ items }: AwardsSectionProps) {
           width: 240px;
           min-height: 345px;
           height: auto;
-          background: #18181b;
-          border: 1px solid rgba(255, 255, 255, 0.14);
-          box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+          background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+            #121216;
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          box-shadow:
+            0 12px 30px rgba(0, 0, 0, 0.35),
+            0 1px 0 rgba(255, 255, 255, 0.03) inset;
           text-align: left;
           overflow: hidden;
-          border-radius: 10px;
-          transition: transform 0.12s ease-out, border-color 0.12s ease-out;
+          border-radius: 14px;
+          transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
           opacity: 0;
           transform: translateY(18px) scale(0.96);
           transition: opacity 420ms ease, transform 420ms ease, border-color 0.12s ease-out;
@@ -127,8 +131,11 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         }
 
         .award-card:hover {
-          transform: translateY(-2px) scale(1.02);
-          border-color: rgba(255, 255, 255, 0.28);
+          transform: translateY(-4px) scale(1.015);
+          border-color: rgba(255, 255, 255, 0.26);
+          box-shadow:
+            0 18px 36px rgba(0, 0, 0, 0.42),
+            0 1px 0 rgba(255, 255, 255, 0.05) inset;
         }
 
         .award-card-visible {
@@ -137,18 +144,19 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         }
 
         .award-title-wrap {
-          padding: 10px 12px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-          min-height: 54px;
+          padding: 12px 14px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+          min-height: 58px;
           display: flex;
           align-items: center;
         }
 
         .award-title {
           color: #ffffff;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 700;
-          line-height: 1.3;
+          line-height: 1.35;
+          letter-spacing: 0.01em;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
@@ -163,25 +171,31 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         }
 
         .award-caption {
-          padding: 10px 12px;
+          padding: 12px 14px 14px;
           margin-top: 0;
           display: flex;
           flex-direction: column;
-          gap: 7px;
+          gap: 8px;
+          flex: 1;
         }
 
         .award-description {
-          color: #d4d4d8;
+          color: #e4e4e7;
           font-size: 12px;
-          line-height: 1.35;
+          line-height: 1.45;
           white-space: normal;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
         }
 
         .award-date {
-          color: #fda4af;
+          color: #fca5a5;
           font-size: 11px;
-          font-weight: 700;
-          letter-spacing: 0.02em;
+          font-weight: 600;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
         }
 
         .award-github {
@@ -191,16 +205,18 @@ export function AwardsSection({ items }: AwardsSectionProps) {
           color: #ffffff;
           font-size: 11px;
           font-weight: 600;
-          padding: 5px 8px;
+          padding: 6px 10px;
           border-radius: 9999px;
-          background: rgba(255, 255, 255, 0.12);
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.24);
           text-decoration: none;
-          transition: background 0.12s ease-out;
+          transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .award-github:hover {
-          background: rgba(255, 255, 255, 0.22);
+          background: rgba(255, 255, 255, 0.18);
+          border-color: rgba(255, 255, 255, 0.32);
+          transform: translateY(-1px);
         }
 
       `}</style>
