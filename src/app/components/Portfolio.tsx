@@ -8,6 +8,7 @@ import { ProjectModal } from "./ProjectModal";
 import { Footer } from "./Footer";
 import { AwardsSection } from "./AwardsSection";
 import { CertificatesSection } from "./CertificatesSection";
+import { ConnectSection } from "./ConnectSection";
 import data from "../../data.json";
 
 export function Portfolio() {
@@ -80,16 +81,7 @@ export function Portfolio() {
           />
         )}
 
-        {data.connect && (
-          <ContentRow
-            title="Connect with Me"
-            items={data.connect}
-            onItemClick={setSelectedItem}
-            cardWidthClassName="w-[170px] md:w-[220px] flex-none"
-            cardAspectClassName="aspect-square"
-            centered
-          />
-        )}
+        {data.connect && <ConnectSection items={data.connect} />}
       </div>
 
       {/* Project Modal */}
