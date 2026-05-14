@@ -5,8 +5,10 @@ interface LandingPageProps {
 }
 
 export function LandingPage({ onEnter }: LandingPageProps) {
+  const baseUrl = import.meta.env.BASE_URL;
+
   const playNetflixSound = () => {
-    const audio = new Audio("/sounds/netflix.mp3");
+    const audio = new Audio(`${baseUrl}sounds/netflix.mp3`);
     audio.volume = 0.8;
     audio.play().catch(err => console.error(err));
   };

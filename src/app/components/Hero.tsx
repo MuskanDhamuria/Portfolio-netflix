@@ -9,6 +9,8 @@ interface HeroProps {
 }
 
 export function Hero({ name, tagline, description, videoUrl }: HeroProps) {
+  const baseUrl = import.meta.env.BASE_URL;
+
   if (!name || !tagline || !description) {
     return null;
   }
@@ -53,7 +55,7 @@ export function Hero({ name, tagline, description, videoUrl }: HeroProps) {
 
           <div className="flex gap-4">
             <a
-              href="/resume.pdf"
+              href={`${baseUrl}resume.pdf`}
               download
               className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded hover:bg-white/90 transition-colors"
             >
