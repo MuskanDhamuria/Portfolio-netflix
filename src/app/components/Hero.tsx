@@ -63,7 +63,7 @@ export function Hero({ name, tagline, description, videoUrl }: HeroProps) {
               <span>Download Resume</span>
             </a>
             <a
-              href="#experience"
+              href="#projects"
               className="flex items-center gap-2 bg-gray-500/70 text-white px-8 py-3 rounded hover:bg-gray-500/50 transition-colors"
             >
               <Info className="w-5 h-5" />
