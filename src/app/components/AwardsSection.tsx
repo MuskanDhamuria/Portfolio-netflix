@@ -113,12 +113,14 @@ export function AwardsSection({ items }: AwardsSectionProps) {
           min-height: 345px;
           height: auto;
           background:
-            linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
-            #121216;
-          border: 1px solid rgba(255, 255, 255, 0.12);
+            radial-gradient(circle at 15% 0%, rgba(251, 113, 133, 0.2), rgba(0, 0, 0, 0) 40%),
+            radial-gradient(circle at 90% 100%, rgba(56, 189, 248, 0.15), rgba(0, 0, 0, 0) 45%),
+            linear-gradient(160deg, rgba(24, 24, 27, 0.98), rgba(9, 9, 11, 0.98));
+          border: 1px solid rgba(255, 255, 255, 0.16);
           box-shadow:
-            0 12px 30px rgba(0, 0, 0, 0.35),
-            0 1px 0 rgba(255, 255, 255, 0.03) inset;
+            0 16px 36px rgba(0, 0, 0, 0.45),
+            0 1px 0 rgba(255, 255, 255, 0.06) inset,
+            0 0 0 1px rgba(251, 113, 133, 0.08);
           text-align: left;
           overflow: hidden;
           border-radius: 14px;
@@ -131,11 +133,12 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         }
 
         .award-card:hover {
-          transform: translateY(-4px) scale(1.015);
-          border-color: rgba(255, 255, 255, 0.26);
+          transform: translateY(-6px) scale(1.02);
+          border-color: rgba(251, 113, 133, 0.55);
           box-shadow:
-            0 18px 36px rgba(0, 0, 0, 0.42),
-            0 1px 0 rgba(255, 255, 255, 0.05) inset;
+            0 24px 46px rgba(0, 0, 0, 0.5),
+            0 1px 0 rgba(255, 255, 255, 0.1) inset,
+            0 0 24px rgba(251, 113, 133, 0.2);
         }
 
         .award-card-visible {
@@ -145,14 +148,14 @@ export function AwardsSection({ items }: AwardsSectionProps) {
 
         .award-title-wrap {
           padding: 12px 14px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
           min-height: 58px;
           display: flex;
           align-items: center;
         }
 
         .award-title {
-          color: #ffffff;
+          color: #f8fafc;
           font-size: 14px;
           font-weight: 700;
           line-height: 1.35;
@@ -167,7 +170,8 @@ export function AwardsSection({ items }: AwardsSectionProps) {
           width: 100%;
           height: 160px;
           object-fit: cover;
-          background: #27272a;
+          background: #18181b;
+          filter: saturate(1.08) contrast(1.06);
         }
 
         .award-caption {
@@ -180,7 +184,7 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         }
 
         .award-description {
-          color: #e4e4e7;
+          color: #e2e8f0;
           font-size: 12px;
           line-height: 1.45;
           white-space: normal;
@@ -191,7 +195,7 @@ export function AwardsSection({ items }: AwardsSectionProps) {
         }
 
         .award-date {
-          color: #fca5a5;
+          color: #f9a8d4;
           font-size: 11px;
           font-weight: 600;
           letter-spacing: 0.08em;
@@ -207,15 +211,15 @@ export function AwardsSection({ items }: AwardsSectionProps) {
           font-weight: 600;
           padding: 6px 10px;
           border-radius: 9999px;
-          background: rgba(255, 255, 255, 0.08);
-          border: 1px solid rgba(255, 255, 255, 0.24);
+          background: rgba(251, 113, 133, 0.14);
+          border: 1px solid rgba(251, 113, 133, 0.35);
           text-decoration: none;
           transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
         }
 
         .award-github:hover {
-          background: rgba(255, 255, 255, 0.18);
-          border-color: rgba(255, 255, 255, 0.32);
+          background: rgba(251, 113, 133, 0.24);
+          border-color: rgba(251, 113, 133, 0.5);
           transform: translateY(-1px);
         }
 
