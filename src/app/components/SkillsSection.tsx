@@ -29,7 +29,7 @@ export function SkillsSection({ categories }: SkillsSectionProps) {
   }
   const scanStartMs = 3200;
   const rowStepMs = 500;
-  const analysisDoneMs = scanStartMs + rowStepMs * 5 + 300;
+  const analysisDoneMs = scanStartMs + rowStepMs * 4+ 300;
   const terminalExitMs = analysisDoneMs + 1400;
   const [sectionStarted, setSectionStarted] = useState(false);
   const [showTerminal, setShowTerminal] = useState(true);
@@ -65,9 +65,7 @@ export function SkillsSection({ categories }: SkillsSectionProps) {
   const barRows = [
     { label: "Frontend", blocks: "\u2588\u2588\u2588\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591", key: "frontend" },
     { label: "Backend", blocks: "\u2588\u2588\u2588\u2588\u2588\u2588\u2591\u2591\u2591\u2591\u2591\u2591", key: "backend" },
-    { label: "Data Analytics", blocks: "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2591\u2591\u2591\u2591", key: "data analytics" },
-    { label: "Cybersecurity", blocks:  "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2591\u2591", key: "cybersecurity" },
-    { label: "Others", blocks: "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588", key: "others" },
+    { label: "Cybersecurity", blocks:  "\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588", key: "cybersecurity" },
   ];
 
   const skillsByRow = (rowKey: string) => {
@@ -230,7 +228,7 @@ export function SkillsSection({ categories }: SkillsSectionProps) {
       </div>
       <style>{`
         .skill-terminal-card {
-          padding: 1rem;
+          padding: 0.1rem;
           overflow: hidden;
           border-radius: 12px;
           background-color: #d9d9d92f;

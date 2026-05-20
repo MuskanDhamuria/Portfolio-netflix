@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
 
 interface ConnectItem {
@@ -19,11 +18,11 @@ const iconMap: Record<string, any> = {
   Mail,
 };
 
-const accentMap: Record<string, string> = {
-  github: "from-zinc-500/30 to-zinc-900/40",
-  linkedin: "from-sky-500/30 to-blue-900/40",
-  email: "from-rose-500/30 to-orange-900/40",
-};
+const colorClasses = [
+  "bg-gradient-to-br from-zinc-500/30 to-zinc-900/40",
+  "bg-gradient-to-br from-sky-800/30 to-blue-900/40",
+  "bg-gradient-to-br from-rose-800/30 to-orange-900/40",
+];
 
 export function ConnectSection({ items }: ConnectSectionProps) {
   if (!items || items.length === 0) {
@@ -40,44 +39,47 @@ export function ConnectSection({ items }: ConnectSectionProps) {
           <h2 className="text-white text-xl sm:text-2xl md:text-3xl tracking-tight">Connect with Me</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+        <div className="cards group flex flex-wrap items-stretch justify-center gap-4">
           {items.map((item, index) => {
             const IconComponent = iconMap[item.icon || ""] || Mail;
-            const accent = accentMap[item.title.toLowerCase()] || "from-red-500/30 to-zinc-900/40";
             const ctaText = item.title.toLowerCase() === "email" ? "Send message" : `Visit ${item.title}`;
+            const color = colorClasses[index % colorClasses.length];
 
             return (
-              <motion.a
+              <a
                 key={item.id}
                 href={item.url}
                 target={item.url.startsWith("mailto:") ? undefined : "_blank"}
                 rel={item.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
-                whileHover={{ y: -6 }}
-                className="group relative flex min-h-[170px] sm:min-h-[190px] overflow-hidden rounded-lg sm:rounded-xl border border-white/10 bg-zinc-900/55 p-4 sm:p-5 transition-colors hover:border-white/30"
+                className={`card relative flex h-[190px] w-[190px] cursor-pointer flex-col rounded-xl border border-white/10 bg-zinc-900/55 p-4 text-white transition duration-400 ${color}`}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${accent} opacity-40 transition-opacity duration-300 group-hover:opacity-65`} />
-                <div className="relative z-10 flex w-full flex-col">
-                  <div className="mb-3 sm:mb-4 inline-flex w-fit rounded-lg border border-white/20 bg-black/30 p-2 sm:p-2.5">
-                    <IconComponent className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                <div className="flex h-full flex-col">
+                  <div className="mb-3 inline-flex w-fit rounded-lg border border-white/20 bg-black/20 p-2">
+                    <IconComponent className="h-5 w-5 text-white" />
                   </div>
-                  <h3 className="text-base sm:text-lg text-white">{item.title}</h3>
-                  <p className="mt-2 text-xs sm:text-sm leading-relaxed text-zinc-200">
+                  <h3 className="tip text-lg font-bold">{item.title}</h3>
+                  <p className="second-text mt-1 text-xs leading-relaxed text-white/90">
                     {item.description || "Let's connect."}
                   </p>
-                  <span className="mt-auto pt-4 inline-flex items-center gap-1.5 text-xs sm:text-sm font-medium text-white">
-                    {ctaText}
-                    <ArrowUpRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </span>
+                  
                 </div>
-              </motion.a>
+              </a>
             );
           })}
         </div>
       </div>
+
+      <style>{`
+        .cards .card:hover {
+          transform: scale(1.2);
+          z-index: 2;
+        }
+
+        .cards:hover > .card:not(:hover) {
+          filter: blur(10px);
+          transform: scale(0.9);
+        }
+      `}</style>
     </section>
   );
 }
