@@ -42,7 +42,6 @@ export function CertificatesSection({ items, onItemClick }: CertificatesSectionP
       <div className="mb-5 flex items-end justify-between gap-4">
         <div>
           <h2 className="text-white">Certificates</h2>
-          <p className="mt-1 text-sm text-white/55">Credential vault with verified learning tracks</p>
         </div>
       </div>
 
