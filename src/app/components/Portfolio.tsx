@@ -9,6 +9,7 @@ import { Footer } from "./Footer";
 import { AwardsSection } from "./AwardsSection";
 import { CertificatesSection } from "./CertificatesSection";
 import { ConnectSection } from "./ConnectSection";
+import { SectionReveal } from "./SectionReveal";
 import data from "../../data.json";
 
 export function Portfolio() {
@@ -44,62 +45,76 @@ export function Portfolio() {
       <div className="relative -mt-32 z-10 pb-16">
         {data.featuredProjects && (
           <section id="projects" className="scroll-mt-24">
-            <ContentRow
-              title="Featured Projects"
-              items={data.featuredProjects}
-              onItemClick={setSelectedItem}
-              cardWidthClassName={standardCardWidth}
-              cardAspectClassName={standardCardAspect}
-            />
+            <SectionReveal>
+              <ContentRow
+                title="Featured Projects"
+                items={data.featuredProjects}
+                onItemClick={setSelectedItem}
+                cardWidthClassName={standardCardWidth}
+                cardAspectClassName={standardCardAspect}
+              />
+            </SectionReveal>
           </section>
         )}
 
         {data.workExperience && (
           <section id="experience" className="scroll-mt-24">
-            <ContentRow
-              title="Work Experience"
-              items={data.workExperience}
-              onItemClick={setSelectedItem}
-              cardWidthClassName={standardCardWidth}
-              cardAspectClassName={standardCardAspect}
-            />
+            <SectionReveal delay={0.03}>
+              <ContentRow
+                title="Work Experience"
+                items={data.workExperience}
+                onItemClick={setSelectedItem}
+                cardWidthClassName={standardCardWidth}
+                cardAspectClassName={standardCardAspect}
+              />
+            </SectionReveal>
           </section>
         )}
 
         {data.skills && data.skills.categories && (
           <section id="skills" className="scroll-mt-24">
-            <SkillsSection categories={data.skills.categories} />
+            <SectionReveal delay={0.05}>
+              <SkillsSection categories={data.skills.categories} />
+            </SectionReveal>
           </section>
         )}
 
         {data.education && (
           <section id="education" className="scroll-mt-24">
-            <EducationTimeline
-              university={data.education.university}
-              jc={data.education.jc}
-              onItemClick={setSelectedItem}
-            />
+            <SectionReveal delay={0.06}>
+              <EducationTimeline
+                university={data.education.university}
+                jc={data.education.jc}
+                onItemClick={setSelectedItem}
+              />
+            </SectionReveal>
           </section>
         )}
 
         {data.awards && (
           <section id="awards" className="scroll-mt-24">
-            <AwardsSection items={data.awards} />
+            <SectionReveal delay={0.07}>
+              <AwardsSection items={data.awards} />
+            </SectionReveal>
           </section>
         )}
 
         {data.certificates && (
           <section id="certificates" className="scroll-mt-24">
-            <CertificatesSection
-              items={data.certificates}
-              onItemClick={setSelectedItem}
-            />
+            <SectionReveal delay={0.08}>
+              <CertificatesSection
+                items={data.certificates}
+                onItemClick={setSelectedItem}
+              />
+            </SectionReveal>
           </section>
         )}
 
         {data.connect && (
           <section id="connect" className="scroll-mt-24">
-            <ConnectSection items={data.connect} />
+            <SectionReveal delay={0.09}>
+              <ConnectSection items={data.connect} />
+            </SectionReveal>
           </section>
         )}
       </div>
