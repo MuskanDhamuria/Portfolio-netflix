@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { ExternalLink, ShieldCheck } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -28,14 +28,6 @@ export function CertificatesSection({ items, onItemClick }: CertificatesSectionP
   }
 
   const featured = items.find((item) => item.id === featuredId) || items[0];
-  const skillTape = useMemo(
-    () =>
-      items
-        .flatMap((item) => item.details?.skills || [])
-        .filter((skill, index, arr) => arr.indexOf(skill) === index)
-        .slice(0, 14),
-    [items]
-  );
 
   return (
     <section className="mb-8 px-8 md:mb-12 md:px-16 lg:px-20">
@@ -49,27 +41,26 @@ export function CertificatesSection({ items, onItemClick }: CertificatesSectionP
         <motion.button
           type="button"
           onClick={() => onItemClick(featured)}
-          whileHover={{ scale: 1.01 }}
-          className="group relative overflow-hidden rounded-xl border border-white/15 bg-zinc-900 text-left lg:col-span-2"
+          whileHover={{ scale: 1.008 }}
+          className="group relative overflow-hidden rounded-xl border border-white/15 bg-zinc-950 text-left shadow-[0_18px_50px_rgba(0,0,0,0.55)] lg:col-span-2"
         >
           <img
             src={featured.thumbnail || "https://via.placeholder.com/1200x700?text=Certificate"}
             alt={featured.title}
-            className="h-[300px] w-full object-cover transition duration-500 group-hover:scale-105 md:h-[360px]"
+            className="h-[300px] w-full object-cover saturate-110 transition duration-700 group-hover:scale-110 md:h-[380px]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
           <div className="absolute left-0 right-0 top-0 p-4">
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-300/30 bg-emerald-400/15 px-3 py-1 text-xs text-emerald-100">
-              <ShieldCheck className="h-3.5 w-3.5" />
-              Verified Credential
-            </div>
+            
           </div>
           <div className="absolute left-0 right-0 bottom-0 p-5 md:p-6">
-            <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/90">
+            <p className="text-xs uppercase tracking-[0.22em] text-red-200/95">
               {featured.organization || "Certificate"} {featured.date ? `| ${featured.date}` : ""}
             </p>
-            <h3 className="mt-2 text-xl text-white md:text-2xl">{featured.title}</h3>
-            {featured.description && <p className="mt-2 max-w-2xl text-sm text-white/75">{featured.description}</p>}
+            <h3 className="mt-2 text-2xl text-white md:text-3xl">{featured.title}</h3>
+            {featured.description && (
+              <p className="mt-2 line-clamp-3 max-w-2xl text-sm leading-relaxed text-white/80">{featured.description}</p>
+            )}
             {featured.url && (
               <a
                 href={featured.url}
@@ -85,7 +76,7 @@ export function CertificatesSection({ items, onItemClick }: CertificatesSectionP
           </div>
         </motion.button>
 
-        <div className="max-h-[360px] space-y-2 overflow-y-auto rounded-xl border border-white/10 bg-zinc-950/80 p-3 md:max-h-[420px]">
+        <div className="max-h-[380px] space-y-2 overflow-y-auto rounded-xl border border-white/10 bg-zinc-950/90 p-3 md:max-h-[440px]">
           {items.map((item) => {
             const isActive = item.id === featured.id;
             return (
@@ -93,40 +84,31 @@ export function CertificatesSection({ items, onItemClick }: CertificatesSectionP
                 key={item.id}
                 type="button"
                 onClick={() => setFeaturedId(item.id)}
-                className={`w-full rounded-lg border px-3 py-3 text-left transition ${
+                className={`w-full rounded-lg border px-2.5 py-2.5 text-left transition ${
                   isActive
-                    ? "border-cyan-300/40 bg-cyan-400/10"
-                    : "border-white/10 bg-zinc-900/70 hover:border-white/25 hover:bg-zinc-900"
+                    ? "border-red-400/55 bg-red-500/12"
+                    : "border-white/10 bg-zinc-900/70 hover:border-red-300/35 hover:bg-zinc-900"
                 }`}
               >
-                <p className="text-xs uppercase tracking-[0.2em] text-white/55">{item.date || "Credential"}</p>
-                <p className="mt-1 text-sm text-white">{item.title}</p>
-                <p className="mt-1 text-xs text-white/60">{item.organization}</p>
+                <div className="flex items-center gap-3">
+                  <img
+                    src={item.thumbnail || "https://via.placeholder.com/120x80?text=Cert"}
+                    alt={item.title}
+                    className="h-14 w-20 rounded-md object-cover"
+                  />
+                  <div className="min-w-0">
+                    <p className={`text-xs uppercase tracking-[0.2em] ${isActive ? "text-red-200/95" : "text-white/55"}`}>
+                      {item.date || "Credential"}
+                    </p>
+                    <p className="mt-1 line-clamp-1 text-sm text-white">{item.title}</p>
+                    <p className="mt-1 line-clamp-1 text-xs text-white/60">{item.organization}</p>
+                  </div>
+                </div>
               </button>
             );
           })}
         </div>
       </div>
-
-      {skillTape.length > 0 && (
-        <div className="mt-4 overflow-hidden rounded-lg border border-white/10 bg-zinc-950/70 py-2">
-          <div className="flex w-max gap-2 px-3 animate-[marqueeSkills_26s_linear_infinite]">
-            {[...skillTape, ...skillTape].map((skill, idx) => (
-              <span key={`${skill}-${idx}`} className="rounded-full bg-white/10 px-3 py-1 text-xs text-white/80">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <style>{`
-        @keyframes marqueeSkills {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
     </section>
   );
 }
-
