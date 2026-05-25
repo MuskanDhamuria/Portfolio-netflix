@@ -6,7 +6,35 @@
     "videoUrl": "videos/background.mp4"
   },
   "featuredProjects": [
-    {
+      {
+      "id": "1",
+      "title": "ESMOS Cloud-Native Platform",
+      "description": "Designed and deployed cloud-native enterprise applications on Azure Kubernetes Service (AKS) using Docker, ArgoCD GitOps, and CI/CD pipelines. Implemented TLS-secured ingress routing with NGINX Ingress and cert-manager, container orchestration, persistent storage provisioning, monitoring/log analytics, and automated deployment workflows for scalable microservice-based healthcare systems.",
+      "thumbnail": "images/cloud.png",
+      "trailerUrl": "images/esmos.png",
+      "details": {
+        "tech": [
+          "Kubernetes",
+          "Docker",
+          "Azure AKS",
+          "Azure Container Registry",
+          "ArgoCD",
+          "GitHub Actions",
+          "NGINX Ingress",
+          "cert-manager",
+          "PostgreSQL",
+          "Azure Files",
+          "Azure Managed Disks"
+        ],
+        "duration": "4 months",
+        "role": "Cloud & DevOps Engineer",
+        "highlights": [
+          "Implemented GitOps-based automated deployment workflows with ArgoCD and GitHub Actions",
+          "Configured TLS-secured ingress routing, persistent storage, monitoring, and rollback workflows on AKS"
+        ]
+      }
+    },
+      {
       "id": "1",
       "title": "Questpass",
       "description": "QuestPass is a fair-access presale platform designed to combat ticket scalping and bot abuse. Instead of selling tickets, QuestPass integrates with official ticketing partners and allows fans to earn presale access by completing engagement-based quests such as music trivia, listening history verification, and mini-games.",
@@ -54,41 +82,62 @@
         ]
       },
       "githubUrl": "https://github.com/MuskanDhamuria/URBANIX"
-    },
+    }, 
+
     {
-      "id": "4",
-      "title": "Housing Price Analysis Singapore",
-      "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
-      "thumbnail": "images/econs.png",
-      "trailerUrl": "images/econstableau.png",
-      "details": {
-        "tech": ["Tableau", "Power Query", "Excel", "Pandas", "Folium", "Matplotlib"],
-        "duration": "4 months",
-        "role": "Data Analyst",
-        "highlights": [
-          "Achieved Higher Distinction for the project",
-          "Analyzed 100,000+ HDB resale transactions from 2015-2024"
-        ]
-      }
+    "id": "3",
+    "title": "3D Piano",
+    "description": "Built an interactive 3D piano application using Three.js and Web Audio API, featuring real-time keyboard-triggered sound synthesis, bloom post-processing, orbit camera controls, and dynamic lighting in a browser-rendered environment.",
+    "thumbnail": "images/3dpiano.png",
+    "trailerUrl": "videos/3dpiano.mp4",
+    "details": {
+      "tech": [
+        "Three.js",
+        "JavaScript",
+        "Vite",
+        "Web Audio API",
+        "3D Rendering",
+        "OrbitControls",
+        "Post-processing"
+      ],
+      "duration": "2 months",
+      "role": "Frontend Graphics Developer",
+      "highlights": [
+        "Implemented real-time audio synthesis with reverb effects",
+        "Developed interactive 3D rendering pipeline with dynamic lighting"
+      ]
     },
-    {
-      "id": "5",
-      "title": "Koryori Hayashi",
-      "description": "Multi pronged solution to enable digital transformation for a local restaurant, including a customer-facing website with online ordering, a data analytics dashboard for sales insights with pricing and inventory management, a digital loyalty program, a social media marketing strategy, queue and table management system and a digital twin.",
-      "thumbnail": "images/koryori.png",
-      "trailerUrl": "videos/koryori.MOV",
-      "details": {
-        "tech": ["React.js", "TypeScript", "Tailwind CSS", "Recharts", "Node.js", "Gemini API", "JavaScript", "Supabase"],
-        "duration": "4 months",
-        "role": "Full Stack Developer",
-        "highlights": [
-          "Implemented data-driven solutions for restaurant digital transformation"
-        ]
-      },
+    "liveUrl": "https://muskandhamuria.github.io/3D-Piano/",
+    "githubUrl": "https://github.com/MuskanDhamuria/3D-Piano"
+  },
+  {
+  "id": "5",
+  "title": "Koryori Hayashi",
+  "description": "Developed an AI-enabled digital transformation platform for a local restaurant, integrating online ordering, analytics dashboards, inventory and pricing optimization, loyalty systems, queue management, and a machine learning-powered digital twin for operational simulation and decision support.",
+  "thumbnail": "images/koryori.png",
+  "trailerUrl": "videos/koryori.MOV",
+  "details": {
+    "tech": [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Recharts",
+      "Node.js",
+      "Gemini API",
+      "JavaScript",
+      "Supabase"
+    ],
+    "duration": "4 months",
+    "role": "Full Stack Developer",
+    "highlights": [
+      "Built data-driven tools for restaurant operations and customer engagement",
+      "Implemented digital twin simulation for operational strategy analysis"
+    ]
+  },
       "githubUrl": "https://github.com/MuskanDhamuria/Koryori_Hayashi",
       "liveUrl": "https://koryorihayashi.my.canva.site/"
     },
-
+    
     {
       "id": "6",
       "title": "PixelPop",
@@ -104,6 +153,23 @@
       },
       "liveUrl": "https://muskandhamuria.github.io/PixelPop/",
       "githubUrl": "https://github.com/MuskanDhamuria/PixelPop"
+    },
+    
+    {
+      "id": "4",
+      "title": "Housing Price Analysis Singapore",
+      "description": "In-depth analysis of residential property prices examining location, flat type, and amenities",
+      "thumbnail": "images/econs.png",
+      "trailerUrl": "images/econstableau.png",
+      "details": {
+        "tech": ["Tableau", "Power Query", "Excel", "Pandas", "Folium", "Matplotlib"],
+        "duration": "4 months",
+        "role": "Data Analyst",
+        "highlights": [
+          "Achieved Higher Distinction for the project",
+          "Analyzed 100,000+ HDB resale transactions from 2015-2024"
+        ]
+      }
     },
         {
       "id": "7",

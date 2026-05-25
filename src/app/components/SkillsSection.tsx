@@ -29,8 +29,9 @@ export function SkillsSection({ categories }: SkillsSectionProps) {
   }
   const scanStartMs = 3200;
   const rowStepMs = 500;
-  const analysisDoneMs = scanStartMs + rowStepMs * 4+ 300;
-  const terminalExitMs = analysisDoneMs + 1400;
+  const analysisDoneMs = scanStartMs + rowStepMs * 3.4+ 300;
+  const skillsRevealDelayMs = 250;
+  const terminalExitMs = analysisDoneMs + skillsRevealDelayMs;
   const [sectionStarted, setSectionStarted] = useState(false);
   const [showTerminal, setShowTerminal] = useState(true);
   const [showScanText, setShowScanText] = useState(false);
@@ -44,20 +45,20 @@ export function SkillsSection({ categories }: SkillsSectionProps) {
     const scanTimer = setTimeout(() => setShowScanText(true), scanStartMs);
     const rowsTimer = setInterval(() => {
       setFilledRows((prev) => {
-        if (prev >= 5) {
+        const next = prev + 1;
+        if (next >= barRows.length) {
           clearInterval(rowsTimer);
-          return prev;
+          setShowDoneText(true);
+          return barRows.length;
         }
-        return prev + 1;
+        return next;
       });
     }, rowStepMs);
-    const doneTimer = setTimeout(() => setShowDoneText(true), analysisDoneMs);
     const hideTimer = setTimeout(() => setShowTerminal(false), terminalExitMs);
 
     return () => {
       clearTimeout(scanTimer);
       clearInterval(rowsTimer);
-      clearTimeout(doneTimer);
       clearTimeout(hideTimer);
     };
   }, [sectionStarted]);
@@ -138,9 +139,9 @@ export function SkillsSection({ categories }: SkillsSectionProps) {
                     <code>npx&nbsp;</code>
                     <code className="skill-cmd" data-cmd="muskan skills" />
                   </pre>
-                  {showScanText && (
-                    <p className="skill-line mt-3">Scanning developer profile...</p>
-                  )}
+                  {/* {showScanText && (
+                    // <p className="skill-line mt-3">Scanning developer profile...</p>
+                  )} */}
                   <div className="mt-3 flex flex-col gap-2">
                     {barRows.map((row, idx) => (
                       <div key={row.label} className="skill-bar-group">
