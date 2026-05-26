@@ -16,6 +16,14 @@ export function Portfolio() {
   const [selectedItem, setSelectedItem] = useState<any>(null);
   const standardCardWidth = "w-[170px] md:w-[240px] flex-none";
   const standardCardAspect = "aspect-[2/3]";
+  const featuredCardWidth = "w-[320px] md:w-[640px] flex-none";
+  const featuredCardAspect = "aspect-[16/9]";
+  const featuredProjectItem = data.featuredProjects?.find(
+    (item: any) => item.id === "featured-video",
+  );
+  const projectItems = data.featuredProjects?.filter(
+    (item: any) => item.id !== "featured-video",
+  );
 
   // Safety check for data
   if (!data || !data.hero) {
@@ -45,15 +53,29 @@ export function Portfolio() {
       <div className="relative -mt-32 z-10 pb-16">
         {data.featuredProjects && (
           <section id="projects" className="scroll-mt-24">
+            {featuredProjectItem && (
+              <SectionReveal>
+                <ContentRow
+                  title="Featured Projects"
+                  items={[featuredProjectItem]}
+                  onItemClick={setSelectedItem}
+                  cardWidthClassName={featuredCardWidth}
+                  cardAspectClassName={featuredCardAspect}
+                  centered
+                />
+              </SectionReveal>
+            )}
+            {projectItems && projectItems.length > 0 && (
             <SectionReveal>
               <ContentRow
-                title="Featured Projects"
-                items={data.featuredProjects}
+                title="Projects"
+                items={projectItems}
                 onItemClick={setSelectedItem}
                 cardWidthClassName={standardCardWidth}
                 cardAspectClassName={standardCardAspect}
               />
             </SectionReveal>
+            )}
           </section>
         )}
 

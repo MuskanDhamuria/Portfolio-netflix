@@ -6,6 +6,14 @@
     "videoUrl": "videos/background.mp4"
   },
   "featuredProjects": [
+    {
+      "id": "featured-video",
+      "title": "Muskan's Park <3",
+      "description": "A gallery for my favourite projects!",
+      "cardVideoUrl": "videos/muskanspark.mp4",
+      "redirectOnClick": true,
+      "liveUrl": "https://muskandhamuria.github.io/Featured_Projects/"
+    },
       {
       "id": "1",
       "title": "ESMOS Cloud-Native Platform",

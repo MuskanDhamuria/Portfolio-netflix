@@ -8,6 +8,9 @@ interface ContentItem {
   role?: string;
   thumbnail: string;
   description?: string;
+  liveUrl?: string;
+  cardVideoUrl?: string;
+  redirectOnClick?: boolean;
 }
 
 interface ContentRowProps {
@@ -51,6 +54,14 @@ export function ContentRow({
     }
   };
 
+  const handleItemClick = (item: ContentItem) => {
+    if (item.redirectOnClick && item.liveUrl) {
+      window.open(item.liveUrl, "_blank", "noopener,noreferrer");
+      return;
+    }
+    onItemClick(item);
+  };
+
   return (
     <div className="mb-8 md:mb-12 group">
       <h2 className="text-white px-8 md:px-16 lg:px-20 mb-4">{title}</h2>
@@ -84,23 +95,39 @@ export function ContentRow({
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
               className={`${cardWidthClassName} cursor-pointer transition-transform relative`}
-              onClick={() => onItemClick(item)}
+              onClick={() => handleItemClick(item)}
             >
               <div className={`relative ${cardAspectClassName} rounded overflow-hidden group/card`}>
-                <img
-                  src={item.thumbnail || "https://via.placeholder.com/400x600?text=No+Image"}
-                  alt={item.title || "Content item"}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = "https://via.placeholder.com/400x600?text=Image+Error";
-                  }}
-                />
+                {item.cardVideoUrl ? (
+                  <video
+                    src={item.cardVideoUrl}
+                    className="w-full h-full object-cover"
+                    muted
+                    loop
+                    autoPlay
+                    playsInline
+                  />
+                ) : (
+                  <img
+                    src={item.thumbnail || "https://via.placeholder.com/400x600?text=No+Image"}
+                    alt={item.title || "Content item"}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://via.placeholder.com/400x600?text=Image+Error";
+                    }}
+                  />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-90 transition-opacity group-hover/card:opacity-100" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
                   <p className="text-white text-sm font-medium truncate">{item.title}</p>
                   {item.role && (
                     <p className="mt-0.5 text-[11px] text-gray-300 truncate">{item.role}</p>
+                  )}
+                  {centered && item.description && (
+                    <p className="mt-2 text-xs text-gray-200 opacity-0 max-h-0 overflow-hidden transition-all duration-300 group-hover/card:opacity-100 group-hover/card:max-h-24 line-clamp-3">
+                      {item.description}
+                    </p>
                   )}
                 </div>
               </div>
