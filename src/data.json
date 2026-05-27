@@ -9,7 +9,7 @@
     {
       "id": "featured-video",
       "title": "Muskan's Park <3",
-      "description": "A gallery for my favourite projects!",
+      "description": "Click to enter a gallery for my favourite projects!",
       "cardVideoUrl": "videos/muskanspark.mp4",
       "redirectOnClick": true,
       "liveUrl": "https://muskandhamuria.github.io/Featured_Projects/"
@@ -40,7 +40,8 @@
           "Implemented GitOps-based automated deployment workflows with ArgoCD and GitHub Actions",
           "Configured TLS-secured ingress routing, persistent storage, monitoring, and rollback workflows on AKS"
         ]
-      }
+      },
+      "liveUrl": "https://muskandhamuria.my.canva.site/esmos-cloud-native-platform"
     },
       {
       "id": "1",
@@ -143,7 +144,7 @@
     ]
   },
       "githubUrl": "https://github.com/MuskanDhamuria/Koryori_Hayashi",
-      "liveUrl": "https://koryorihayashi.my.canva.site/"
+      "liveUrl": "https://muskandhamuria.my.canva.site/koryori-hayashi"
     },
     
     {
