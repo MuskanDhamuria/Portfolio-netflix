@@ -12,6 +12,11 @@ interface ProjectDetails {
   description?: string;
   impact?: string[];
   skills?: string[];
+  testimonial?: string;
+  graduationCertificate?: {
+    url: string;
+    label?: string;
+  };
 }
 
 interface Project {
@@ -146,6 +151,27 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               )}
               <p className="text-gray-300 mb-6">{project.description}</p>
 
+              {project.details?.testimonial && (
+                <div className="border-l-2 border-red-500 pl-4 mb-6">
+                  <p className="text-gray-300 italic">“{project.details.testimonial}”</p>
+                </div>
+              )}
+
+              {project.details?.graduationCertificate?.url && (
+                <div className="mb-6">
+                  <p className="text-gray-400 text-sm mb-2"></p>
+                  <a
+                    href={project.details.graduationCertificate.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-zinc-700 text-white px-4 py-2 rounded hover:bg-zinc-600 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    <span>{project.details.graduationCertificate.label || "View Certificate"}</span>
+                  </a>
+                </div>
+              )}
+
               {/* Project Details */}
               {project.details && (
                 <div className="space-y-4 mb-6">
@@ -198,7 +224,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
                   {project.details.achievements && project.details.achievements.length > 0 && (
                     <div>
-                      <p className="text-gray-400 text-sm mb-2">Achievements</p>
+                      <p className="text-gray-400 text-sm mb-2">Summary</p>
                       <ul className="space-y-2">
                         {project.details.achievements.map((achievement, index) => (
                           <li key={`achievement-${index}`} className="text-gray-300 flex items-start">

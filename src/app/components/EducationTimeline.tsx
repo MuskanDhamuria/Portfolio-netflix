@@ -73,6 +73,11 @@ export function EducationTimeline({ university, jc, onItemClick }: EducationTime
                     </p>
                     <h4 className="mb-1 text-base leading-tight text-white md:text-lg">{item.degree}</h4>
                     <p className="text-sm text-zinc-300 md:text-base">{item.institution}</p>
+                    {item.details?.testimonial && (
+                      <p className="mt-2 max-h-10 overflow-hidden text-xs italic text-zinc-400 md:text-sm">
+                        “{item.details.testimonial}”
+                      </p>
+                    )}
                     <button
                       type="button"
                       onClick={() => onItemClick(item)}
