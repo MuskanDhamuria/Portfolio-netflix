@@ -201,14 +201,14 @@
   "workExperience": [
     {
       "id": "w1",
-      "title": "RPA Software Engineer Intern",
+      "title": "AI Automation Engineer Intern",
       "company": "SP group",
-      "description": "Designed and implemented RPA scripts using .NET, JavaScript, and HTML, focusing on modular logic, error handling, and performance optimization. Engineered automation solutions using Automation Anywhere to replace manual workflows with scalable, code-driven processes. Integrated automation workflows with existing systems, debugged and resolved runtime issues, and contributed to improving system reliability and efficiency through structured testing and iteration.",
+      "description": "Migrated legacy IQ Bot document-processing workflows to modern AI-powered Document Automation solutions, improving maintainability and scalability. Designed and optimized intelligent document-processing pipelines to enhance data extraction accuracy and reduce manual processing effort. Developed Agentic AI workflows for intelligent decision-making, task orchestration, and end-to-end business process automation. Collaborated with business stakeholders and cross-functional teams to gather requirements, design AI-driven automation solutions, and support deployment. Leveraged technologies including Automation Anywhere, Document Automation, OCR, Generative AI, and Agentic AI to streamline enterprise workflows. ",
       "thumbnail": "images/spgroup.png",
       "trailerUrl": "images/rpa.png",
       "details": {
         "duration": "Jul 2026 - Dec 2026",
-        "role": "RPA Software Engineer Intern",
+        "role": "AI Automation Engineer Intern",
         "highlights": [
           
         ]
