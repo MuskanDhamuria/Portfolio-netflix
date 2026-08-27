@@ -347,12 +347,9 @@
           "achievements": [
             "GPA: Cum Laude (Distinction)",
             "Double Major: Product Development & Cybersecurity",
-            "Teaching Assistant: Data Management",
+            "Teaching Assistant: IS112 - Data Management, CS440 - Foundations of Cybersecurity",
             "Member: SMU Women in Tech, SMU .Hack, SMU AI Club",
-            "UWS STEMentorship 2025 Mentee",
-            "UWS STEM First Fintech Programme 2026 Participant"
-
-
+            "Leadership: Events Deputy for SMU Women in Tech, Hackathon Lead"
 
           ],
           "courses": [
@@ -409,6 +406,23 @@
     ]
   },
   "awards": [
+    {
+      "id": "a0",
+      "title": "Featured Project, Garena AI Build Challenge 2026" ,
+      "description": "Selected as one of 39 featured projects for Emergent, a four-player pixel adventure powered by an AI Game Master that analyses player behaviour in real time, assigns personalised roles, dynamically evolves the game world, and generates adaptive cooperative finales. ",
+      "thumbnail": "images/minimy.png",
+      "githubUrl": "https://github.com/MuskanDhamuria/EMERGENT-GARENA",
+      "date": "2026"
+    },
+    {
+      "id": "a0",
+      "title": "Finalist - Morgan Stanley Code to Give Hackathon 2026",
+      "description": " Selected as one of 50 students across Singapore to develop Passion Hub, a full-stack platform that streamlines event planning, volunteer coordination, participant registration, QR attendance, and post-event administration for a local non-profit. Built an AI Event Copilot that generates workflows, recommends actions, and automates reports, certificates, and social media content. Integrated WhatsApp for automated communications. ",
+      "thumbnail": "images/passionhub.png",
+      "githubUrl": "https://github.com/MuskanDhamuria/CodetoGiveAsia26",
+      "date": "2026"
+    },
+
     {
       "id": "a1",
       "title": "Most Feasible Solution - Hack For Cities Hackathon 2026",
