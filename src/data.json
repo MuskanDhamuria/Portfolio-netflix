@@ -495,9 +495,9 @@
       "id": "cert1",
       "title": "Google Cybersecurity Professional Certificate",
       "description": "Comprehensive cybersecurity training from fundamentals to advanced topics.",
-      "thumbnail": "https://www.techspot.com/images2/news/bigimage/2023/04/2023-04-18-image-21.jpg",
+      "thumbnail": "images/gglcyber.png",
       "organization": "Google",
-      "date": "In Progress",
+      "date": "2026",
       "credentialId": "",
       "details": {
         "description": "",
@@ -520,15 +520,39 @@
           "Vulnerability Mnanagement"
         ]
       },
-      "url": "https://aws.amazon.com/certification/"
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/KAUD72CAJ5UI"
     },
+    {
+      "id": "cert3",
+      "title": "Google AI Professional Certificate",
+      "description": "Comprehensive AI training from fundamentals to advanced topics.",
+      "thumbnail": "images/gglai.png",
+      "organization": "Google",
+      "date": "2026",
+      "credentialId": "",
+      "details": {
+        "description": "",
+        "skills": [
+          "AI Fundamentals",
+          "Machine Learning",
+          "Deep Learning",
+          "Natural Language Processing",
+          "Computer Vision",
+          "Reinforcement Learning",
+          "AI Ethics",
+          "AI Deployment"
+        ]
+      },
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/8KM57AV6VYYQ"
+    }
+    ,
     {
       "id": "cert2",
       "title": "Google Data Analytics Professional Certificate",
       "description": "Comprehensive data analytics training from data collection to visualization.",
-      "thumbnail": "https://www.techspot.com/images2/news/bigimage/2023/04/2023-04-18-image-21.jpg",
+      "thumbnail": "images/ggldata.png",
       "organization": "Google",
-      "date": "In Progress",
+      "date": "2026",
       "credentialId": "",
       "details": {
         "description": "Completed hands-on training in data cleaning, analysis, and visualization",
@@ -549,7 +573,7 @@
           "Rmarkdown"
         ]
       },
-      "url": "https://www.coursera.org/professional-certificates/google-data-analytics"
+      "url": "https://www.coursera.org/account/accomplishments/professional-cert/AGDJXQ4HFLNZ"
     },
     {
       "id": "cert6",
