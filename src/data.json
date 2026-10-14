@@ -199,6 +199,21 @@
 
   ],
   "workExperience": [
+     {
+      "id": "w3",
+      "title": "Cloud Security & TechOps EngineerIntern",
+      "company": "CPF Board",
+      "description": "Support mission-critical cloud infrastructure and security platforms, including troubleshooting, performance optimisation, and platform maintenance. Collaborate with technical and business stakeholders to identify use cases for IT operations optimisation and automation. Develop monitoring solutions and security controls for cloud environments to support infrastructure security and resilience. Develop technical documentation, standard operating procedures, and knowledge resources to improve operational clarity and consistency. Contribute to cloud operations and automation initiatives using scripting, infrastructure-as-code, and query-based analysis. ",
+      "thumbnail": "images/cpf.png",
+      "trailerUrl": "images/cpf2.png",
+      "details": {
+        "duration": "Jan 2027 - Jun 2027",
+        "role": "Cloud Security & TechOps Intern",
+        "highlights": [
+          
+        ]
+      }
+    },
     {
       "id": "w1",
       "title": "AI Automation Engineer Intern",
